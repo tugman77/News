@@ -6,45 +6,45 @@
 <title>[오전 브리핑] 2026년 05월 16일 종합판</title>
 <link rel="stylesheet" href="style.css">
 <style>
-:root{--bg:#0f1117;--card:#1a1d27;--border:#2a2d3e;--accent:#4f8ef7;--up:#e74c4c;--dn:#3b82f6;--text:#e2e8f0;--sub:#8892a4;--yellow:#f0c040;--surface2:#242837;}
+:root{--bg:#f4f6fa;--card:#ffffff;--border:#e2e8f0;--accent:#2563eb;--up:#e53e3e;--dn:#2563eb;--text:#1a202c;--sub:#64748b;--yellow:#d97706;--surface2:#f0f4f8;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--bg);color:var(--text);font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;font-size:14px;line-height:1.7;}
 a{color:var(--accent);text-decoration:none;}
 a:hover{text-decoration:underline;}
 .back-link-bar{display:block;padding:12px 20px;background:var(--card);border-bottom:1px solid var(--border);font-size:13px;color:var(--sub);}
 .back-link-bar:hover{color:var(--accent);}
-.header{background:linear-gradient(135deg,#1a1d27,#0f1117);padding:28px 20px 22px;border-bottom:2px solid var(--accent);}
-.header .badge{display:inline-block;background:#f59e0b;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;margin-bottom:10px;}
+.header{background:linear-gradient(135deg,#1e3a5f,#2563eb);padding:28px 20px 22px;}
+.header .badge{display:inline-block;background:rgba(255,255,255,0.2);color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;margin-bottom:10px;}
 .header h1{font-size:22px;font-weight:800;color:#fff;letter-spacing:-0.02em;margin-bottom:4px;}
-.header .sub{color:var(--sub);font-size:13px;margin-bottom:14px;}
-.weather-box{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin-bottom:12px;font-size:14px;}
-.quote-box{border-left:3px solid var(--accent);padding:8px 14px;font-size:13px;color:var(--sub);background:rgba(79,142,247,.06);border-radius:0 6px 6px 0;}
-.quote-box strong{color:var(--text);}
-.section{padding:20px;border-bottom:1px solid var(--border);}
+.header .sub{color:rgba(255,255,255,0.8);font-size:13px;margin-bottom:14px;}
+.weather-box{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:8px;padding:10px 14px;margin-bottom:12px;font-size:14px;color:#fff;}
+.quote-box{border-left:3px solid rgba(255,255,255,0.5);padding:8px 14px;font-size:13px;color:rgba(255,255,255,0.85);background:rgba(255,255,255,0.1);border-radius:0 6px 6px 0;}
+.quote-box strong{color:#fff;}
+.section{padding:20px;border-bottom:1px solid var(--border);background:var(--card);}
 .section h2{font-size:14px;font-weight:700;color:var(--accent);margin-bottom:14px;padding-bottom:6px;border-bottom:1px solid var(--border);text-transform:uppercase;letter-spacing:.04em;}
 table{width:100%;border-collapse:collapse;font-size:13px;}
 @media(max-width:640px){.col-hide{display:none;} table{font-size:12px;} th,td{padding:6px 8px;}}
 th{background:var(--surface2);color:var(--sub);padding:8px 10px;text-align:left;font-weight:600;font-size:12px;white-space:nowrap;}
-td{padding:8px 10px;border-bottom:1px solid var(--border);white-space:nowrap;}
-tr:hover td{background:rgba(255,255,255,.02);}
+td{padding:8px 10px;border-bottom:1px solid var(--border);white-space:nowrap;color:var(--text);}
+tr:hover td{background:rgba(0,0,0,.02);}
 .up{color:var(--up);font-weight:700;}
 .dn{color:var(--dn);font-weight:700;}
 .flat{color:var(--sub);}
-.insight{background:var(--card);border-left:3px solid var(--accent);padding:10px 14px;margin-top:12px;font-size:13px;color:var(--sub);border-radius:0 6px 6px 0;}
+.insight{background:#eff6ff;border-left:3px solid var(--accent);padding:10px 14px;margin-top:12px;font-size:13px;color:#1e40af;border-radius:0 6px 6px 0;}
 .news-list{list-style:none;counter-reset:news;}
-.news-list li{counter-increment:news;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;display:flex;gap:10px;align-items:flex-start;}
+.news-list li{counter-increment:news;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;display:flex;gap:10px;align-items:flex-start;color:var(--text);}
 .news-list li::before{content:counter(news);background:var(--accent);color:#fff;font-size:11px;font-weight:700;min-width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
-.news-item{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:16px;}
+.news-item{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:16px;box-shadow:0 1px 4px rgba(0,0,0,0.06);}
 .news-item .no{font-size:11px;font-weight:700;color:var(--accent);letter-spacing:.05em;margin-bottom:6px;}
-.news-item h3{font-size:14px;font-weight:700;margin-bottom:10px;line-height:1.45;}
+.news-item h3{font-size:14px;font-weight:700;margin-bottom:10px;line-height:1.45;color:var(--text);}
 .news-item .summary{color:var(--sub);font-size:13px;margin-bottom:12px;line-height:1.7;}
-.easy-box{background:#1a1500;border:1px solid var(--yellow);border-radius:6px;padding:12px 14px;margin-bottom:12px;font-size:13px;line-height:1.7;}
-.easy-box .label{font-weight:700;color:var(--yellow);margin-bottom:4px;font-size:12px;}
-.easy-box strong{color:var(--yellow);}
-.fact-table th{background:#1a2a4a;color:#93c5fd;font-size:12px;}
+.easy-box{background:#fffbeb;border:1px solid #fbbf24;border-radius:6px;padding:12px 14px;margin-bottom:12px;font-size:13px;line-height:1.7;}
+.easy-box .label{font-weight:700;color:#92400e;margin-bottom:4px;font-size:12px;}
+.easy-box strong{color:#92400e;}
+.fact-table th{background:#eff6ff;color:#1e40af;font-size:12px;}
 .one-line{color:var(--accent);font-weight:700;font-size:13px;margin-top:10px;padding-top:10px;border-top:1px solid var(--border);}
 .point-list{list-style:none;padding:0;}
-.point-list li{padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;line-height:1.6;}
+.point-list li{padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;line-height:1.6;color:var(--text);}
 .point-list li::before{content:"• ";color:var(--accent);font-weight:700;}
 .disclaimer{color:var(--sub);font-size:12px;padding:24px 20px;text-align:center;}
 .trend-desc{font-size:13px;color:var(--sub);line-height:1.7;}
