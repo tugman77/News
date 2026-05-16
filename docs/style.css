@@ -1,23 +1,23 @@
 /* ============================================================
    데일리 증시 브리핑 — 공유 스타일시트
-   Dark finance theme · Mobile-first · Print-friendly
+   Light News theme · Mobile-first · Print-friendly
    ============================================================ */
 
 /* ---------- Reset & Base ---------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg:        #0f1117;
-  --surface:   #1a1d27;
-  --surface2:  #242837;
-  --border:    #2e3348;
-  --accent:    #4f8ef7;
-  --accent2:   #7c5cfc;
-  --text:      #e2e8f0;
-  --text-muted:#8892a4;
-  --rise:      #ef4444;   /* 상승 — 빨강 */
-  --fall:      #3b82f6;   /* 하락 — 파랑 */
-  --flat:      #6b7280;
+  --bg:        #f4f6fa;
+  --surface:   #ffffff;
+  --surface2:  #f0f4f8;
+  --border:    #e2e8f0;
+  --accent:    #2563eb;
+  --accent2:   #1e3a5f;
+  --text:      #1a202c;
+  --text-muted:#64748b;
+  --rise:      #e53e3e;   /* 상승 — 빨강 */
+  --fall:      #2563eb;   /* 하락 — 파랑 */
+  --flat:      #94a3b8;
   --card-r:    12px;
   --transition: 0.18s ease;
 }
@@ -45,8 +45,8 @@ a:hover { text-decoration: underline; }
 
 /* ---------- Site Header ---------- */
 .site-header {
-  background: linear-gradient(135deg, #1a1d27 0%, #0f1117 100%);
-  border-bottom: 1px solid var(--border);
+  background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+  border-bottom: none;
   padding: 2rem 0 1.5rem;
   text-align: center;
   position: sticky;
@@ -59,13 +59,13 @@ a:hover { text-decoration: underline; }
   font-size: clamp(1.4rem, 4vw, 2rem);
   font-weight: 700;
   letter-spacing: -0.02em;
-  color: var(--text);
+  color: #ffffff;
 }
 
 .site-header .subtitle {
   margin-top: 0.3rem;
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: rgba(255,255,255,0.75);
 }
 
 /* ---------- Archive Index Grid ---------- */
@@ -87,12 +87,13 @@ a:hover { text-decoration: underline; }
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
 }
 
 .briefing-card:hover {
   border-color: var(--accent);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(79,142,247,0.12);
+  box-shadow: 0 8px 24px rgba(37,99,235,0.12);
 }
 
 .briefing-card .card-date {
@@ -120,10 +121,10 @@ a:hover { text-decoration: underline; }
   width: fit-content;
 }
 
-.briefing-card .card-badge.morning  { background: #f59e0b; }
-.briefing-card .card-badge.noon     { background: #10b981; }
-.briefing-card .card-badge.afternoon{ background: #6366f1; }
-.briefing-card .card-badge.evening  { background: #ec4899; }
+.briefing-card .card-badge.morning  { background: #d97706; }
+.briefing-card .card-badge.noon     { background: #059669; }
+.briefing-card .card-badge.afternoon{ background: #7c3aed; }
+.briefing-card .card-badge.evening  { background: #db2777; }
 
 .briefing-card .card-arrow {
   margin-top: auto;
@@ -143,8 +144,8 @@ a:hover { text-decoration: underline; }
 
 /* ---------- Individual Briefing Page ---------- */
 .briefing-header {
-  background: linear-gradient(135deg, #1a1d27 0%, #12151f 100%);
-  border-bottom: 2px solid var(--accent);
+  background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+  border-bottom: none;
   padding: 1.75rem 0 1.5rem;
 }
 
@@ -153,11 +154,11 @@ a:hover { text-decoration: underline; }
   align-items: center;
   gap: 0.4rem;
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: rgba(255,255,255,0.75);
   margin-bottom: 1rem;
   transition: color var(--transition);
 }
-.back-link:hover { color: var(--accent); text-decoration: none; }
+.back-link:hover { color: #ffffff; text-decoration: none; }
 
 .briefing-meta {
   display: flex;
@@ -173,7 +174,7 @@ a:hover { text-decoration: underline; }
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 700;
-  background: var(--accent);
+  background: rgba(255,255,255,0.2);
   color: #fff;
 }
 
@@ -183,6 +184,7 @@ a:hover { text-decoration: underline; }
   letter-spacing: -0.03em;
   line-height: 1.3;
   margin-top: 0.5rem;
+  color: #ffffff;
 }
 
 /* ---------- Content Sections ---------- */
@@ -263,10 +265,10 @@ a:hover { text-decoration: underline; }
 }
 
 .market-table tr:hover td {
-  background: rgba(255,255,255,0.02);
+  background: rgba(0,0,0,0.02);
 }
 
-/* 모바일: 원인/비고 컬럼 숨김, 행 카드화 */
+/* 모바일: 원인/비고 컬럼 숨김 */
 @media (max-width: 640px) {
   .market-table { font-size: 0.82rem; }
   .market-table th, .market-table td { padding: 0.5rem 0.5rem; }
@@ -285,6 +287,7 @@ a:hover { text-decoration: underline; }
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 1rem 1.25rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
 }
 
 .news-item .news-source {
@@ -312,13 +315,14 @@ a:hover { text-decoration: underline; }
 
 /* ---------- Summary Box ---------- */
 .summary-box {
-  background: var(--surface2);
+  background: #eff6ff;
   border: 1px solid var(--border);
-  border-left: 4px solid var(--accent2);
+  border-left: 4px solid var(--accent);
   border-radius: 8px;
   padding: 1.25rem 1.5rem;
   font-size: 0.9rem;
   line-height: 1.7;
+  color: #1e40af;
 }
 
 /* ---------- Footer ---------- */
@@ -338,15 +342,12 @@ a:hover { text-decoration: underline; }
 /* ---------- Print Styles ---------- */
 @media print {
   body        { background: #fff; color: #111; }
-  .site-header, .back-link, .site-footer { display: none; }
-  .briefing-header { background: #fff; border-bottom: 2px solid #333; }
-  .briefing-title  { color: #111; }
-  .section-title   { color: #333; border-color: #333; }
+  .site-header { background: #1e3a5f; }
+  .briefing-header { background: #1e3a5f; }
   .market-table th { background: #f0f0f0; color: #333; }
   .market-table td, .market-table th { border-color: #ccc; }
-  .news-item  { border-color: #ccc; }
+  .news-item  { border-color: #ccc; box-shadow: none; }
   .summary-box{ border-color: #333; background: #f9f9f9; color: #111; }
-  a           { color: #111; }
 }
 
 /* ---------- Responsive ---------- */
@@ -363,4 +364,5 @@ a:hover { text-decoration: underline; }
   justify-content: center;
   border-top: 1px solid var(--border);
   flex-wrap: wrap;
+  background: var(--surface);
 }
