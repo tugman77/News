@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📊 데일리 증시 브리핑 — 아카이브</title>
+  <meta name="description" content="국내외 주식시장 일일 브리핑 아카이브" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Index-only overrides */
+    .filter-bar {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      padding: 1.25rem 0 0;
+    }
+    .filter-btn {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.35em 0.9em;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      font-family: inherit;
+    }
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .stats-bar {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      padding: 1rem 0 0;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+    .stats-bar span strong { color: var(--text); }
+    #loading {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    .spinner {
+      width: 32px; height: 32px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      margin: 0 auto 1rem;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+
+<!-- ===== Site Header ===== -->
+<header class="site-header">
+  <div class="container">
+    <h1>📊 데일리 증시 브리핑</h1>
+    <p class="subtitle">국내외 주식시장 일일 브리핑 아카이브</p>
+  </div>
+</header>
+
+<!-- ===== Main ===== -->
+<main class="container">
+
+  <!-- Filter Bar -->
+  <div class="filter-bar" id="filterBar">
+    <button class="filter-btn active" data-edition="all">전체</button>
+    <button class="filter-btn" data-edition="08">🌅 오전 8시 종합판</button>
+    <button class="filter-btn" data-edition="12">🌞 12시 시장판</button>
+    <button class="filter-btn" data-edition="16">🌇 16시 시장판</button>
+    <button class="filter-btn" data-edition="20">🌙 20시 시장판</button>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats-bar" id="statsBar">
+    <span>총 브리핑: <strong id="totalCount">—</strong>개</span>
+    <span>최신: <strong id="latestDate">—</strong></span>
+  </div>
+
+  <!-- Loading -->
+  <div id="loading">
+    <div class="spinner"></div>
+    <p>브리핑 목록을 불러오는 중...</p>
+  </div>
+
+  <!-- Card Grid -->
+  <div class="archive-grid" id="archiveGrid" style="display:none;"></div>
+
+  <!-- Empty State -->
+  <div class="empty-state" id="emptyState" style="display:none;">
+    <div class="empty-icon">📭</div>
+    <p>아직 발행된 브리핑이 없습니다.<br>첫 번째 브리핑을 기다려 주세요.</p>
+  </div>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <p>본 브리핑은 AI가 생성한 참고용 정보이며, 투자 권유가 아닙니다.</p>
+    <p style="margin-top:0.25rem;">© 2026 Daily Market Briefing · tugman77</p>
+  </div>
+</footer>
+
+<!-- ===== Script ===== -->
+<script>
+(function () {
+  const MANIFEST_URL = 'manifest.json';
+
+  /* Edition metadata */
+  const EDITION_META = {
+    '08': { label: '오전 8시 종합판',  badgeClass: 'morning',   icon: '🌅' },
+    '12': { label: '12시 시장판',      badgeClass: 'noon',      icon: '🌞' },
+    '16': { label: '16시 시장판',      badgeClass: 'afternoon', icon: '🌇' },
+    '20': { label: '20시 시장판',      badgeClass: 'evening',   icon: '🌙' },
+  };
+
+  let allBriefings = [];
+  let currentEdition = 'all';
+
+  /* ---- Fetch manifest ---- */
+  async function loadManifest() {
+    try {
+      const res = await fetch(MANIFEST_URL + '?_=' + Date.now());
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const data = await res.json();
+      allBriefings = (data.briefings || []).slice().reverse(); // newest first
+      render();
+    } catch (err) {
+      console.error(err);
+      document.getElementById('loading').innerHTML =
+        '<p style="color:var(--rise);">⚠️ 목록을 불러오지 못했습니다.<br><small>' + err.message + '</small></p>';
+    }
+  }
+
+  /* ---- Render ---- */
+  function render() {
+    const loading   = document.getElementById('loading');
+    const grid      = document.getElementById('archiveGrid');
+    const empty     = document.getElementById('emptyState');
+    const totalEl   = document.getElementById('totalCount');
+    const latestEl  = document.getElementById('latestDate');
+
+    const filtered = currentEdition === 'all'
+      ? allBriefings
+      : allBriefings.filter(b => b.edition === currentEdition);
+
+    loading.style.display = 'none';
+
+    /* Stats */
+    totalEl.textContent = filtered.length;
+    if (allBriefings.length > 0) {
+      latestEl.textContent = allBriefings[0].date || '—';
+    }
+
+    /* Empty */
+    if (filtered.length === 0) {
+      grid.style.display  = 'none';
+      empty.style.display = 'block';
+      return;
+    }
+
+    empty.style.display = 'none';
+    grid.style.display  = '';
+    grid.innerHTML = filtered.map(buildCard).join('');
+  }
+
+  /* ---- Build card HTML ---- */
+  function buildCard(b) {
+    const meta = EDITION_META[b.edition] || { label: b.edition, badgeClass: '', icon: '📄' };
+    const dateStr = b.date || '';
+    /* Format: YYYY-MM-DD → YY년 MM월 DD일 */
+    const [y, m, d] = dateStr.split('-');
+    const friendlyDate = y && m && d ? `${y}년 ${parseInt(m)}월 ${parseInt(d)}일` : dateStr;
+
+    return `
+      <a href="${b.file}" class="briefing-card" style="text-decoration:none; color:inherit;">
+        <span class="card-date">${friendlyDate}</span>
+        <span class="card-badge ${meta.badgeClass}">${meta.icon} ${meta.label}</span>
+        <span class="card-edition">${b.title || meta.label}</span>
+        ${b.summary ? `<span class="text-sm text-muted">${b.summary}</span>` : ''}
+        <span class="card-arrow">읽기 →</span>
+      </a>`;
+  }
+
+  /* ---- Filter buttons ---- */
+  document.getElementById('filterBar').addEventListener('click', function (e) {
+    const btn = e.target.closest('.filter-btn');
+    if (!btn) return;
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentEdition = btn.dataset.edition;
+    render();
+  });
+
+  /* ---- Boot ---- */
+  loadManifest();
+})();
+</script>
+
+</body>
+</html>
