@@ -1,0 +1,321 @@
+/* ============================================================
+   데일리 증시 브리핑 — 공유 스타일시트
+   Dark finance theme · Mobile-first · Print-friendly
+   ============================================================ */
+
+/* ---------- Reset & Base ---------- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:        #0f1117;
+  --surface:   #1a1d27;
+  --surface2:  #242837;
+  --border:    #2e3348;
+  --accent:    #4f8ef7;
+  --accent2:   #7c5cfc;
+  --text:      #e2e8f0;
+  --text-muted:#8892a4;
+  --rise:      #ef4444;   /* 상승 — 빨강 */
+  --fall:      #3b82f6;   /* 하락 — 파랑 */
+  --flat:      #6b7280;
+  --card-r:    12px;
+  --transition: 0.18s ease;
+}
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic',
+               -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ---------- Layout ---------- */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ---------- Site Header ---------- */
+.site-header {
+  background: linear-gradient(135deg, #1a1d27 0%, #0f1117 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 2rem 0 1.5rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+}
+
+.site-header h1 {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.site-header .subtitle {
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* ---------- Archive Index Grid ---------- */
+.archive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.briefing-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--card-r);
+  padding: 1.25rem 1.5rem;
+  transition: border-color var(--transition), transform var(--transition),
+              box-shadow var(--transition);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.briefing-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(79,142,247,0.12);
+}
+
+.briefing-card .card-date {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.briefing-card .card-edition {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.briefing-card .card-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.2em 0.55em;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.briefing-card .card-badge.morning  { background: #f59e0b; }
+.briefing-card .card-badge.noon     { background: #10b981; }
+.briefing-card .card-badge.afternoon{ background: #6366f1; }
+.briefing-card .card-badge.evening  { background: #ec4899; }
+
+.briefing-card .card-arrow {
+  margin-top: auto;
+  font-size: 0.8rem;
+  color: var(--accent);
+  align-self: flex-end;
+}
+
+/* ---------- Empty State ---------- */
+.empty-state {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: var(--text-muted);
+}
+.empty-state .empty-icon { font-size: 3rem; margin-bottom: 1rem; }
+.empty-state p { font-size: 0.95rem; }
+
+/* ---------- Individual Briefing Page ---------- */
+.briefing-header {
+  background: linear-gradient(135deg, #1a1d27 0%, #12151f 100%);
+  border-bottom: 2px solid var(--accent);
+  padding: 1.75rem 0 1.5rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  transition: color var(--transition);
+}
+.back-link:hover { color: var(--accent); text-decoration: none; }
+
+.briefing-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.briefing-meta .edition-badge {
+  display: inline-block;
+  padding: 0.3em 0.8em;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  background: var(--accent);
+  color: #fff;
+}
+
+.briefing-title {
+  font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.3;
+  margin-top: 0.5rem;
+}
+
+/* ---------- Content Sections ---------- */
+.briefing-content { padding: 2rem 0 4rem; }
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent);
+  border-left: 3px solid var(--accent);
+  padding-left: 0.75rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ---------- Market Data Table ---------- */
+.market-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  overflow-x: auto;
+  display: block;
+}
+
+.market-table th,
+.market-table td {
+  padding: 0.6rem 0.75rem;
+  text-align: right;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--border);
+}
+
+.market-table th {
+  text-align: left;
+  color: var(--text-muted);
+  font-weight: 600;
+  background: var(--surface2);
+  font-size: 0.78rem;
+}
+
+.market-table td:first-child,
+.market-table th:first-child {
+  text-align: left;
+}
+
+.market-table tr:hover td {
+  background: rgba(255,255,255,0.02);
+}
+
+.rise  { color: var(--rise); font-weight: 600; }
+.fall  { color: var(--fall); font-weight: 600; }
+.flat  { color: var(--flat); }
+
+/* ---------- News Cards ---------- */
+.news-list { display: flex; flex-direction: column; gap: 0.75rem; }
+
+.news-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+}
+
+.news-item .news-source {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.3rem;
+}
+
+.news-item .news-headline {
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--text);
+}
+
+.news-item .news-summary {
+  margin-top: 0.4rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ---------- Summary Box ---------- */
+.summary-box {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent2);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+/* ---------- Utility ---------- */
+.text-muted { color: var(--text-muted); }
+.text-sm    { font-size: 0.85rem; }
+
+/* ---------- Print Styles ---------- */
+@media print {
+  body        { background: #fff; color: #111; }
+  .site-header, .back-link, .site-footer { display: none; }
+  .briefing-header { background: #fff; border-bottom: 2px solid #333; }
+  .briefing-title  { color: #111; }
+  .section-title   { color: #333; border-color: #333; }
+  .market-table th { background: #f0f0f0; color: #333; }
+  .market-table td, .market-table th { border-color: #ccc; }
+  .news-item  { border-color: #ccc; }
+  .summary-box{ border-color: #333; background: #f9f9f9; color: #111; }
+  a           { color: #111; }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 480px) {
+  .site-header { padding: 1.25rem 0 1rem; position: relative; }
+  .archive-grid { grid-template-columns: 1fr; }
+  .market-table { font-size: 0.78rem; }
+}
