@@ -203,20 +203,49 @@ a:hover { text-decoration: underline; }
   letter-spacing: 0.04em;
 }
 
+/* ---------- Share Bar ---------- */
+.share-bar {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.75rem 1rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  justify-content: flex-end;
+}
+
+.share-btn {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.4em 1em;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s ease;
+}
+
+.share-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
 /* ---------- Market Data Table ---------- */
 .market-table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.88rem;
-  overflow-x: auto;
-  display: block;
+  table-layout: auto;
 }
 
 .market-table th,
 .market-table td {
   padding: 0.6rem 0.75rem;
   text-align: right;
-  white-space: nowrap;
+  white-space: normal;
+  word-break: keep-all;
   border-bottom: 1px solid var(--border);
 }
 
@@ -235,6 +264,13 @@ a:hover { text-decoration: underline; }
 
 .market-table tr:hover td {
   background: rgba(255,255,255,0.02);
+}
+
+/* 모바일: 원인/비고 컬럼 숨김, 행 카드화 */
+@media (max-width: 640px) {
+  .market-table { font-size: 0.82rem; }
+  .market-table th, .market-table td { padding: 0.5rem 0.5rem; }
+  .col-hide { display: none; }
 }
 
 .rise  { color: var(--rise); font-weight: 600; }
@@ -317,5 +353,14 @@ a:hover { text-decoration: underline; }
 @media (max-width: 480px) {
   .site-header { padding: 1.25rem 0 1rem; position: relative; }
   .archive-grid { grid-template-columns: 1fr; }
-  .market-table { font-size: 0.78rem; }
+}
+
+/* ---------- Bottom Share ---------- */
+.share-bar-bottom {
+  display: flex;
+  gap: 0.6rem;
+  padding: 1.25rem 1rem;
+  justify-content: center;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
 }
