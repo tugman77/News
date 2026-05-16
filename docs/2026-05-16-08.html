@@ -22,7 +22,8 @@ a:hover{text-decoration:underline;}
 .quote-box strong{color:var(--text);}
 .section{padding:20px;border-bottom:1px solid var(--border);}
 .section h2{font-size:14px;font-weight:700;color:var(--accent);margin-bottom:14px;padding-bottom:6px;border-bottom:1px solid var(--border);text-transform:uppercase;letter-spacing:.04em;}
-table{width:100%;border-collapse:collapse;font-size:13px;overflow-x:auto;display:block;}
+table{width:100%;border-collapse:collapse;font-size:13px;}
+@media(max-width:640px){.col-hide{display:none;} table{font-size:12px;} th,td{padding:6px 8px;}}
 th{background:var(--surface2);color:var(--sub);padding:8px 10px;text-align:left;font-weight:600;font-size:12px;white-space:nowrap;}
 td{padding:8px 10px;border-bottom:1px solid var(--border);white-space:nowrap;}
 tr:hover td{background:rgba(255,255,255,.02);}
@@ -53,6 +54,11 @@ tr:hover td{background:rgba(255,255,255,.02);}
 <body>
 
 <a class="back-link-bar" href="https://tugman77.github.io/News/">← 브리핑 아카이브로 돌아가기</a>
+<!-- 상단 공유 버튼 -->
+<div class="share-bar">
+  <button class="share-btn" onclick="shareThis()">📤 공유하기</button>
+  <button class="share-btn" id="copyBtn" onclick="copyLink()">🔗 링크 복사</button>
+</div>
 
 <!-- ① 헤더 -->
 <div class="header">
@@ -93,15 +99,15 @@ tr:hover td{background:rgba(255,255,255,.02);}
 <div class="section">
   <h2>🌍 글로벌 증시 (5/15 종가)</h2>
   <table>
-    <tr><th>지수</th><th>종가</th><th>등락</th><th>등락률</th><th>등락 원인</th></tr>
-    <tr><td>🇰🇷 KOSPI</td><td>7,493.18</td><td class="dn">▼ -489.06</td><td class="dn">-6.12%</td><td>미중 회담 실망 + 이란 리스크</td></tr>
-    <tr><td>🇰🇷 KOSDAQ</td><td>1,129.82</td><td class="dn">▼ -61.07</td><td class="dn">-5.14%</td><td>바이오·2차전지 동반 급락</td></tr>
-    <tr><td>🇺🇸 S&amp;P 500</td><td>7,408.50</td><td class="dn">▼ -92.96</td><td class="dn">-1.24%</td><td>기술주 하락, CPI 충격</td></tr>
-    <tr><td>🇺🇸 NASDAQ</td><td>26,225.14</td><td class="dn">▼ -411.15</td><td class="dn">-1.54%</td><td>AI 대형주 차익 실현</td></tr>
-    <tr><td>🇺🇸 DOW 30</td><td>49,526.17</td><td class="dn">▼ -537.29</td><td class="dn">-1.07%</td><td>미중 무역 불확실성</td></tr>
-    <tr><td>🇯🇵 NIKKEI225</td><td>61,409.29</td><td class="dn">▼ -1,247.02</td><td class="dn">-1.99%</td><td>엔화 강세 부담, 글로벌 리스크오프</td></tr>
-    <tr><td>🇭🇰 HANG SENG</td><td>25,962.73</td><td class="dn">▼ -427.30</td><td class="dn">-1.62%</td><td>미중 회담 불확실성</td></tr>
-    <tr><td>🇬🇧 FTSE 100</td><td>10,195.37</td><td class="dn">▼ -177.12</td><td class="dn">-1.71%</td><td>에너지 인플레 우려, BOE 금리 압박</td></tr>
+    <tr><th>지수</th><th>종가</th><th>등락</th><th>등락률</th><th class="col-hide">등락 원인</th></tr>
+    <tr><td>🇰🇷 KOSPI</td><td>7,493.18</td><td class="dn">▼ -489.06</td><td class="dn">-6.12%</td><td class="col-hide">미중 회담 실망 + 이란 리스크</td></tr>
+    <tr><td>🇰🇷 KOSDAQ</td><td>1,129.82</td><td class="dn">▼ -61.07</td><td class="dn">-5.14%</td><td class="col-hide">바이오·2차전지 동반 급락</td></tr>
+    <tr><td>🇺🇸 S&amp;P 500</td><td>7,408.50</td><td class="dn">▼ -92.96</td><td class="dn">-1.24%</td><td class="col-hide">기술주 하락, CPI 충격</td></tr>
+    <tr><td>🇺🇸 NASDAQ</td><td>26,225.14</td><td class="dn">▼ -411.15</td><td class="dn">-1.54%</td><td class="col-hide">AI 대형주 차익 실현</td></tr>
+    <tr><td>🇺🇸 DOW 30</td><td>49,526.17</td><td class="dn">▼ -537.29</td><td class="dn">-1.07%</td><td class="col-hide">미중 무역 불확실성</td></tr>
+    <tr><td>🇯🇵 NIKKEI225</td><td>61,409.29</td><td class="dn">▼ -1,247.02</td><td class="dn">-1.99%</td><td class="col-hide">엔화 강세 부담, 글로벌 리스크오프</td></tr>
+    <tr><td>🇭🇰 HANG SENG</td><td>25,962.73</td><td class="dn">▼ -427.30</td><td class="dn">-1.62%</td><td class="col-hide">미중 회담 불확실성</td></tr>
+    <tr><td>🇬🇧 FTSE 100</td><td>10,195.37</td><td class="dn">▼ -177.12</td><td class="dn">-1.71%</td><td class="col-hide">에너지 인플레 우려, BOE 금리 압박</td></tr>
   </table>
   <div class="insight">💡 글로벌 증시 전 지수 하락. 코스피 -6.12%로 아시아·유럽 중 최대 낙폭. 미중 정상회담 성과 부재 + 이란 지정학 리스크 복합 작용.</div>
 </div>
@@ -109,12 +115,12 @@ tr:hover td{background:rgba(255,255,255,.02);}
 <div class="section">
   <h2>💱 환율 (5/15 기준)</h2>
   <table>
-    <tr><th>통화쌍</th><th>현재</th><th>전일 대비</th><th>비고</th></tr>
-    <tr><td>원 / 달러</td><td>1,450.00원</td><td class="up">▲ 소폭</td><td>이란 협상 불확실, 외국인 매도 수반</td></tr>
-    <tr><td>엔 / 달러</td><td>—</td><td class="flat">—</td><td>데이터 미확인</td></tr>
-    <tr><td>위안 / 달러</td><td>—</td><td class="flat">—</td><td>데이터 미확인</td></tr>
-    <tr><td>유로 / 달러</td><td>—</td><td class="flat">—</td><td>데이터 미확인</td></tr>
-    <tr><td>파운드 / 달러</td><td>—</td><td class="flat">—</td><td>데이터 미확인</td></tr>
+    <tr><th>통화쌍</th><th>현재</th><th>전일 대비</th><th class="col-hide">비고</th></tr>
+    <tr><td>원 / 달러</td><td>1,450.00원</td><td class="up">▲ 소폭</td><td class="col-hide">이란 협상 불확실, 외국인 매도 수반</td></tr>
+    <tr><td>엔 / 달러</td><td>—</td><td class="flat">—</td><td class="col-hide">데이터 미확인</td></tr>
+    <tr><td>위안 / 달러</td><td>—</td><td class="flat">—</td><td class="col-hide">데이터 미확인</td></tr>
+    <tr><td>유로 / 달러</td><td>—</td><td class="flat">—</td><td class="col-hide">데이터 미확인</td></tr>
+    <tr><td>파운드 / 달러</td><td>—</td><td class="flat">—</td><td class="col-hide">데이터 미확인</td></tr>
   </table>
   <div class="insight">💡 원달러 1,450원대 유지. 1,500원 재돌파 경계감 지속. 외국인 매도 6일 연속으로 원화 약세 압력 지속.</div>
 </div>
@@ -122,13 +128,13 @@ tr:hover td{background:rgba(255,255,255,.02);}
 <div class="section">
   <h2>🛢️ 원자재 (5/15 종가)</h2>
   <table>
-    <tr><th>항목</th><th>가격</th><th>등락률</th><th>원화 환산</th><th>비고</th></tr>
-    <tr><td>WTI 원유</td><td>$105.66/bbl</td><td class="up">▲ +4.44%</td><td>—</td><td>호르무즈 봉쇄, 주간 +11%</td></tr>
-    <tr><td>브렌트유</td><td>$106.89/bbl</td><td class="up">▲ +1.11%</td><td>—</td><td>글로벌 공급 우려</td></tr>
-    <tr><td>두바이유</td><td>—</td><td class="flat">—</td><td>—</td><td>데이터 미확인</td></tr>
-    <tr><td>금 (Gold)</td><td>$4,547.93/oz</td><td class="dn">▼ -1.83%</td><td>218,386원/g</td><td>차익 실현, 달러 강세</td></tr>
-    <tr><td>은 (Silver)</td><td>$79.35/oz</td><td class="dn">▼ -10.61%</td><td>3,808원/g</td><td>산업 수요 둔화 우려</td></tr>
-    <tr><td>알루미늄</td><td>—</td><td class="flat">—</td><td>—</td><td>데이터 미확인</td></tr>
+    <tr><th>항목</th><th>가격</th><th>등락률</th><th>원화 환산</th><th class="col-hide">비고</th></tr>
+    <tr><td>WTI 원유</td><td>$105.66/bbl</td><td class="up">▲ +4.44%</td><td>—</td><td class="col-hide">호르무즈 봉쇄, 주간 +11%</td></tr>
+    <tr><td>브렌트유</td><td>$106.89/bbl</td><td class="up">▲ +1.11%</td><td>—</td><td class="col-hide">글로벌 공급 우려</td></tr>
+    <tr><td>두바이유</td><td>—</td><td class="flat">—</td><td>—</td><td class="col-hide">데이터 미확인</td></tr>
+    <tr><td>금 (Gold)</td><td>$4,547.93/oz</td><td class="dn">▼ -1.83%</td><td>218,386원/g</td><td class="col-hide">차익 실현, 달러 강세</td></tr>
+    <tr><td>은 (Silver)</td><td>$79.35/oz</td><td class="dn">▼ -10.61%</td><td>3,808원/g</td><td class="col-hide">산업 수요 둔화 우려</td></tr>
+    <tr><td>알루미늄</td><td>—</td><td class="flat">—</td><td>—</td><td class="col-hide">데이터 미확인</td></tr>
   </table>
   <p style="font-size:11px;color:var(--sub);margin-top:8px;">※ 원화 환산 공식: 온스당달러 ÷ 31.1035 × 원달러환율(1,450원)</p>
   <div class="insight">💡 WTI 3주 연속 상승, $100 상회 고착화. 은 -10.61% 이례적 급락으로 귀금속 투자심리 악화.</div>
@@ -137,13 +143,13 @@ tr:hover td{background:rgba(255,255,255,.02);}
 <div class="section">
   <h2>📈 금리 (5/15 기준)</h2>
   <table>
-    <tr><th>항목</th><th>현재(%)</th><th>전일 대비(bp)</th><th>비고</th></tr>
-    <tr><td>미국 국채 10년</td><td>4.595%</td><td class="up">▲ +14bp</td><td>CPI 서프라이즈로 금리 급등</td></tr>
-    <tr><td>미국 국채 30년</td><td>5.10%+</td><td class="up">▲</td><td>장기 인플레 우려</td></tr>
-    <tr><td>한국 국고채 3년</td><td>—</td><td class="flat">—</td><td>데이터 미확인</td></tr>
-    <tr><td>한국 회사채 AA- 3년</td><td>—</td><td class="flat">—</td><td>데이터 미확인</td></tr>
-    <tr><td>CD 91일</td><td>—</td><td class="flat">—</td><td>데이터 미확인</td></tr>
-    <tr><td>SOFR</td><td>—</td><td class="flat">—</td><td>데이터 미확인</td></tr>
+    <tr><th>항목</th><th>현재(%)</th><th>전일 대비(bp)</th><th class="col-hide">비고</th></tr>
+    <tr><td>미국 국채 10년</td><td>4.595%</td><td class="up">▲ +14bp</td><td class="col-hide">CPI 서프라이즈로 금리 급등</td></tr>
+    <tr><td>미국 국채 30년</td><td>5.10%+</td><td class="up">▲</td><td class="col-hide">장기 인플레 우려</td></tr>
+    <tr><td>한국 국고채 3년</td><td>—</td><td class="flat">—</td><td class="col-hide">데이터 미확인</td></tr>
+    <tr><td>한국 회사채 AA- 3년</td><td>—</td><td class="flat">—</td><td class="col-hide">데이터 미확인</td></tr>
+    <tr><td>CD 91일</td><td>—</td><td class="flat">—</td><td class="col-hide">데이터 미확인</td></tr>
+    <tr><td>SOFR</td><td>—</td><td class="flat">—</td><td class="col-hide">데이터 미확인</td></tr>
   </table>
   <div class="insight">💡 미 국채 10년 4.60% 수준. CPI 서프라이즈로 Fed 금리 인하 기대 급감. 채권 시장이 주식 하락의 주된 촉매.</div>
 </div>
@@ -151,12 +157,12 @@ tr:hover td{background:rgba(255,255,255,.02);}
 <div class="section">
   <h2>💰 증시 주변 자금 · 👥 매매 주체 (5/15)</h2>
   <table>
-    <tr><th>항목</th><th>수치</th><th>비고</th></tr>
-    <tr><td>외국인 순매수</td><td class="dn">▼ -7,178억원</td><td>6일 연속 순매도, 누적 26조원</td></tr>
-    <tr><td>기관 순매수</td><td class="dn">▼ -472억원</td><td>소폭 순매도</td></tr>
-    <tr><td>개인 순매수</td><td class="up">▲ +7,506억원</td><td>8,000선 돌파 시 매수세 유입</td></tr>
-    <tr><td>고객예탁금</td><td>—</td><td>데이터 미확인</td></tr>
-    <tr><td>신용잔고</td><td>36조원 돌파</td><td>금감원 소비자 경보 검토</td></tr>
+    <tr><th>항목</th><th>수치</th><th class="col-hide">비고</th></tr>
+    <tr><td>외국인 순매수</td><td class="dn">▼ -7,178억원</td><td class="col-hide">6일 연속 순매도, 누적 26조원</td></tr>
+    <tr><td>기관 순매수</td><td class="dn">▼ -472억원</td><td class="col-hide">소폭 순매도</td></tr>
+    <tr><td>개인 순매수</td><td class="up">▲ +7,506억원</td><td class="col-hide">8,000선 돌파 시 매수세 유입</td></tr>
+    <tr><td>고객예탁금</td><td>—</td><td class="col-hide">데이터 미확인</td></tr>
+    <tr><td>신용잔고</td><td>36조원 돌파</td><td class="col-hide">금감원 소비자 경보 검토</td></tr>
   </table>
 </div>
 
@@ -326,9 +332,34 @@ tr:hover td{background:rgba(255,255,255,.02);}
   </ul>
 </div>
 
+<!-- 하단 공유 버튼 -->
+<div class="share-bar-bottom">
+  <button class="share-btn" onclick="shareThis()">📤 공유하기</button>
+  <button class="share-btn" id="copyBtn2" onclick="copyLink2()">🔗 링크 복사</button>
+</div>
 <div class="disclaimer">
   ※ 본 브리핑은 정보 제공 목적이며 투자 권유가 아닙니다.<br>
   투자 판단과 그 결과는 전적으로 본인에게 있습니다.
 </div>
+<script>
+function shareThis(){
+  if(navigator.share){navigator.share({title:document.title,url:location.href});}
+  else{copyLink();}
+}
+function copyLink(){
+  navigator.clipboard.writeText(location.href).then(()=>{
+    var b=document.getElementById('copyBtn');
+    b.textContent='✅ 복사됨';
+    setTimeout(()=>{b.textContent='🔗 링크 복사';},2000);
+  });
+}
+function copyLink2(){
+  navigator.clipboard.writeText(location.href).then(()=>{
+    var b=document.getElementById('copyBtn2');
+    b.textContent='✅ 복사됨';
+    setTimeout(()=>{b.textContent='🔗 링크 복사';},2000);
+  });
+}
+</script>
 </body>
 </html>
