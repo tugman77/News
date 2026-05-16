@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[오전 브리핑] 2026년 05월 16일 종합판</title>
+<link rel="stylesheet" href="style.css">
+<style>
+:root{--bg:#0f1117;--card:#1a1d27;--border:#2a2d3e;--accent:#4f8ef7;--up:#e74c4c;--dn:#3b82f6;--text:#e2e8f0;--sub:#8892a4;--yellow:#f0c040;--surface2:#242837;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;font-size:14px;line-height:1.7;}
+a{color:var(--accent);text-decoration:none;}
+a:hover{text-decoration:underline;}
+.back-link-bar{display:block;padding:12px 20px;background:var(--card);border-bottom:1px solid var(--border);font-size:13px;color:var(--sub);}
+.back-link-bar:hover{color:var(--accent);}
+.header{background:linear-gradient(135deg,#1a1d27,#0f1117);padding:28px 20px 22px;border-bottom:2px solid var(--accent);}
+.header .badge{display:inline-block;background:#f59e0b;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;margin-bottom:10px;}
+.header h1{font-size:22px;font-weight:800;color:#fff;letter-spacing:-0.02em;margin-bottom:4px;}
+.header .sub{color:var(--sub);font-size:13px;margin-bottom:14px;}
+.weather-box{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin-bottom:12px;font-size:14px;}
+.quote-box{border-left:3px solid var(--accent);padding:8px 14px;font-size:13px;color:var(--sub);background:rgba(79,142,247,.06);border-radius:0 6px 6px 0;}
+.quote-box strong{color:var(--text);}
+.section{padding:20px;border-bottom:1px solid var(--border);}
+.section h2{font-size:14px;font-weight:700;color:var(--accent);margin-bottom:14px;padding-bottom:6px;border-bottom:1px solid var(--border);text-transform:uppercase;letter-spacing:.04em;}
+table{width:100%;border-collapse:collapse;font-size:13px;overflow-x:auto;display:block;}
+th{background:var(--surface2);color:var(--sub);padding:8px 10px;text-align:left;font-weight:600;font-size:12px;white-space:nowrap;}
+td{padding:8px 10px;border-bottom:1px solid var(--border);white-space:nowrap;}
+tr:hover td{background:rgba(255,255,255,.02);}
+.up{color:var(--up);font-weight:700;}
+.dn{color:var(--dn);font-weight:700;}
+.flat{color:var(--sub);}
+.insight{background:var(--card);border-left:3px solid var(--accent);padding:10px 14px;margin-top:12px;font-size:13px;color:var(--sub);border-radius:0 6px 6px 0;}
+.news-list{list-style:none;counter-reset:news;}
+.news-list li{counter-increment:news;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;display:flex;gap:10px;align-items:flex-start;}
+.news-list li::before{content:counter(news);background:var(--accent);color:#fff;font-size:11px;font-weight:700;min-width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.news-item{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:16px;}
+.news-item .no{font-size:11px;font-weight:700;color:var(--accent);letter-spacing:.05em;margin-bottom:6px;}
+.news-item h3{font-size:14px;font-weight:700;margin-bottom:10px;line-height:1.45;}
+.news-item .summary{color:var(--sub);font-size:13px;margin-bottom:12px;line-height:1.7;}
+.easy-box{background:#1a1500;border:1px solid var(--yellow);border-radius:6px;padding:12px 14px;margin-bottom:12px;font-size:13px;line-height:1.7;}
+.easy-box .label{font-weight:700;color:var(--yellow);margin-bottom:4px;font-size:12px;}
+.easy-box strong{color:var(--yellow);}
+.fact-table th{background:#1a2a4a;color:#93c5fd;font-size:12px;}
+.one-line{color:var(--accent);font-weight:700;font-size:13px;margin-top:10px;padding-top:10px;border-top:1px solid var(--border);}
+.point-list{list-style:none;padding:0;}
+.point-list li{padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;line-height:1.6;}
+.point-list li::before{content:"• ";color:var(--accent);font-weight:700;}
+.disclaimer{color:var(--sub);font-size:12px;padding:24px 20px;text-align:center;}
+.trend-desc{font-size:13px;color:var(--sub);line-height:1.7;}
+.trend-desc strong{color:var(--text);}
+</style>
+</head>
+<body>
+
+<a class="back-link-bar" href="https://tugman77.github.io/News/">← 브리핑 아카이브로 돌아가기</a>
+
+<!-- ① 헤더 -->
+<div class="header">
+  <div class="badge">🌅 오전 8시 종합판</div>
+  <h1>📰 데일리 증시 브리핑</h1>
+  <div class="sub">2026년 05월 16일 (토) · 전거래일(5/15) 종가 기준</div>
+  <div class="weather-box">
+    <span style="font-size:20px;">☀️</span>
+    <span>서울 <strong>20°</strong> ↑20° ↓20° &nbsp;·&nbsp; 💧 강수확률 10%&nbsp;&nbsp;맑음</span>
+  </div>
+  <div class="quote-box">
+    💬 <strong>"10년에 한 번씩 먹구름이 경제의 하늘을 뒤덮는다. 그리고 그 구름에서 잠시 황금이 쏟아진다."</strong><br>
+    <span style="font-size:12px;font-style:italic;">"Every decade or so, dark clouds will fill the economic skies, and they will briefly rain gold."</span><br>
+    <span style="font-size:12px;">— Warren Buffett</span>
+  </div>
+</div>
+
+<!-- ② 헤드라인 -->
+<div class="section">
+  <h2>📑 오늘의 헤드라인</h2>
+  <ol class="news-list">
+    <li><a href="https://v.daum.net/v/pk0GClyOuE">코스피 -6.12% 급락…8,000선 돌파 하루 만에 역대 낙폭 — 미중 정상회담 실망 매도</a></li>
+    <li><a href="https://fortune.com/article/price-of-oil-05-15-2026/">WTI $105.66 (+4.44%) — 호르무즈 봉쇄 지속, 주간 상승폭 +11% 돌파</a></li>
+    <li><a href="https://www.cnbc.com/2026/05/14/stock-market-today-live-updates.html">S&amp;P500 -1.24%, 나스닥 -1.54% — 미중 회담 결렬 우려, 기술주 동반 하락</a></li>
+    <li><a href="https://v.daum.net/v/20260516n00547">미 4월 CPI +0.6% 예상 상회 — 인플레이션 우려 재점화, Fed 금리 인하 후퇴</a></li>
+    <li><a href="https://data.krx.co.kr/">외국인 6일 연속 순매도 26조원 — 개인 7,506억 순매수로 방어전</a></li>
+    <li><a href="https://economymiddleeast.com/news/stock-market-today-nikkei-ftse-edge-up-as-sp-500-retreats-from-all-time-highs-nasdaq-sinks/">닛케이 -1.99%, 항셍 -1.62%, FTSE -1.71% — 글로벌 증시 동반 하락</a></li>
+    <li><a href="https://v.daum.net/v/20260506180913502">빚투 36조 돌파 — 금감원 소비자 경보 검토, 폭락 시 줄파산 우려</a></li>
+    <li><a href="https://infostock.co.kr/a">한국 수출물가 28년래 최고 — 반도체 가격 급등 견인</a></li>
+    <li><a href="https://oilprice.com/">원유 재고 6월 말 소진 경고 — FT·IEA, 에너지 위기 경보</a></li>
+    <li><a href="https://www.cnbc.com/2026/05/15/asia-markets-live-updates-today-trump-xi-nikkei-225-kospi-hang-seng-index.html">이란-미국 협상 교착 — 호르무즈 봉쇄 장기화 우려</a></li>
+    <li><a href="https://kr.investing.com/news/stock-market-news">엔비디아 중국 기업 칩 판매 허용 — AI 반도체 수출규제 부분 완화</a></li>
+    <li><a href="https://ts2.tech/en/us-stock-market-today-dow-retakes-50000-as-ai-rally-sends-sp-500-nasdaq-to-records/">스페이스X IPO 절차 본격화 전망 — 머스크, 연내 상장 가능성</a></li>
+  </ol>
+</div>
+
+<!-- ③ 시장 한 컷 -->
+<div class="section">
+  <h2>🌍 글로벌 증시 (5/15 종가)</h2>
+  <table>
+    <tr><th>지수</th><th>종가</th><th>등락</th><th>등락률</th><th>등락 원인</th></tr>
+    <tr><td>🇰🇷 KOSPI</td><td>7,493.18</td><td class="dn">▼ -489.06</td><td class="dn">-6.12%</td><td>미중 회담 실망 + 이란 리스크</td></tr>
+    <tr><td>🇰🇷 KOSDAQ</td><td>1,129.82</td><td class="dn">▼ -61.07</td><td class="dn">-5.14%</td><td>바이오·2차전지 동반 급락</td></tr>
+    <tr><td>🇺🇸 S&amp;P 500</td><td>7,408.50</td><td class="dn">▼ -92.96</td><td class="dn">-1.24%</td><td>기술주 하락, CPI 충격</td></tr>
+    <tr><td>🇺🇸 NASDAQ</td><td>26,225.14</td><td class="dn">▼ -411.15</td><td class="dn">-1.54%</td><td>AI 대형주 차익 실현</td></tr>
+    <tr><td>🇺🇸 DOW 30</td><td>49,526.17</td><td class="dn">▼ -537.29</td><td class="dn">-1.07%</td><td>미중 무역 불확실성</td></tr>
+    <tr><td>🇯🇵 NIKKEI225</td><td>61,409.29</td><td class="dn">▼ -1,247.02</td><td class="dn">-1.99%</td><td>엔화 강세 부담, 글로벌 리스크오프</td></tr>
+    <tr><td>🇭🇰 HANG SENG</td><td>25,962.73</td><td class="dn">▼ -427.30</td><td class="dn">-1.62%</td><td>미중 회담 불확실성</td></tr>
+    <tr><td>🇬🇧 FTSE 100</td><td>10,195.37</td><td class="dn">▼ -177.12</td><td class="dn">-1.71%</td><td>에너지 인플레 우려, BOE 금리 압박</td></tr>
+  </table>
+  <div class="insight">💡 글로벌 증시 전 지수 하락. 코스피 -6.12%로 아시아·유럽 중 최대 낙폭. 미중 정상회담 성과 부재 + 이란 지정학 리스크 복합 작용.</div>
+</div>
+
+<div class="section">
+  <h2>💱 환율 (5/15 기준)</h2>
+  <table>
+    <tr><th>통화쌍</th><th>현재</th><th>전일 대비</th><th>비고</th></tr>
+    <tr><td>원 / 달러</td><td>1,450.00원</td><td class="up">▲ 소폭</td><td>이란 협상 불확실, 외국인 매도 수반</td></tr>
+    <tr><td>엔 / 달러</td><td>—</td><td class="flat">—</td><td>데이터 미확인</td></tr>
+    <tr><td>위안 / 달러</td><td>—</td><td class="flat">—</td><td>데이터 미확인</td></tr>
+    <tr><td>유로 / 달러</td><td>—</td><td class="flat">—</td><td>데이터 미확인</td></tr>
+    <tr><td>파운드 / 달러</td><td>—</td><td class="flat">—</td><td>데이터 미확인</td></tr>
+  </table>
+  <div class="insight">💡 원달러 1,450원대 유지. 1,500원 재돌파 경계감 지속. 외국인 매도 6일 연속으로 원화 약세 압력 지속.</div>
+</div>
+
+<div class="section">
+  <h2>🛢️ 원자재 (5/15 종가)</h2>
+  <table>
+    <tr><th>항목</th><th>가격</th><th>등락률</th><th>원화 환산</th><th>비고</th></tr>
+    <tr><td>WTI 원유</td><td>$105.66/bbl</td><td class="up">▲ +4.44%</td><td>—</td><td>호르무즈 봉쇄, 주간 +11%</td></tr>
+    <tr><td>브렌트유</td><td>$106.89/bbl</td><td class="up">▲ +1.11%</td><td>—</td><td>글로벌 공급 우려</td></tr>
+    <tr><td>두바이유</td><td>—</td><td class="flat">—</td><td>—</td><td>데이터 미확인</td></tr>
+    <tr><td>금 (Gold)</td><td>$4,547.93/oz</td><td class="dn">▼ -1.83%</td><td>218,386원/g</td><td>차익 실현, 달러 강세</td></tr>
+    <tr><td>은 (Silver)</td><td>$79.35/oz</td><td class="dn">▼ -10.61%</td><td>3,808원/g</td><td>산업 수요 둔화 우려</td></tr>
+    <tr><td>알루미늄</td><td>—</td><td class="flat">—</td><td>—</td><td>데이터 미확인</td></tr>
+  </table>
+  <p style="font-size:11px;color:var(--sub);margin-top:8px;">※ 원화 환산 공식: 온스당달러 ÷ 31.1035 × 원달러환율(1,450원)</p>
+  <div class="insight">💡 WTI 3주 연속 상승, $100 상회 고착화. 은 -10.61% 이례적 급락으로 귀금속 투자심리 악화.</div>
+</div>
+
+<div class="section">
+  <h2>📈 금리 (5/15 기준)</h2>
+  <table>
+    <tr><th>항목</th><th>현재(%)</th><th>전일 대비(bp)</th><th>비고</th></tr>
+    <tr><td>미국 국채 10년</td><td>4.595%</td><td class="up">▲ +14bp</td><td>CPI 서프라이즈로 금리 급등</td></tr>
+    <tr><td>미국 국채 30년</td><td>5.10%+</td><td class="up">▲</td><td>장기 인플레 우려</td></tr>
+    <tr><td>한국 국고채 3년</td><td>—</td><td class="flat">—</td><td>데이터 미확인</td></tr>
+    <tr><td>한국 회사채 AA- 3년</td><td>—</td><td class="flat">—</td><td>데이터 미확인</td></tr>
+    <tr><td>CD 91일</td><td>—</td><td class="flat">—</td><td>데이터 미확인</td></tr>
+    <tr><td>SOFR</td><td>—</td><td class="flat">—</td><td>데이터 미확인</td></tr>
+  </table>
+  <div class="insight">💡 미 국채 10년 4.60% 수준. CPI 서프라이즈로 Fed 금리 인하 기대 급감. 채권 시장이 주식 하락의 주된 촉매.</div>
+</div>
+
+<div class="section">
+  <h2>💰 증시 주변 자금 · 👥 매매 주체 (5/15)</h2>
+  <table>
+    <tr><th>항목</th><th>수치</th><th>비고</th></tr>
+    <tr><td>외국인 순매수</td><td class="dn">▼ -7,178억원</td><td>6일 연속 순매도, 누적 26조원</td></tr>
+    <tr><td>기관 순매수</td><td class="dn">▼ -472억원</td><td>소폭 순매도</td></tr>
+    <tr><td>개인 순매수</td><td class="up">▲ +7,506억원</td><td>8,000선 돌파 시 매수세 유입</td></tr>
+    <tr><td>고객예탁금</td><td>—</td><td>데이터 미확인</td></tr>
+    <tr><td>신용잔고</td><td>36조원 돌파</td><td>금감원 소비자 경보 검토</td></tr>
+  </table>
+</div>
+
+<!-- ④ 핵심 지표 추세 -->
+<div class="section">
+  <h2>📊 핵심 지표 추세</h2>
+  <div style="display:flex;flex-direction:column;gap:14px;">
+    <div class="trend-desc">
+      <strong>🇰🇷 KOSPI</strong><br>
+      5/11 8,000선 최초 돌파(7,822) → 5/15 -6.12% 급락(7,493). 연초 대비 +18% 수준. 8,000 재돌파 도전은 미중 협상 재개와 이란 리스크 해소가 관건.
+    </div>
+    <div class="trend-desc">
+      <strong>🇺🇸 S&amp;P 500</strong><br>
+      5/14 사상 최고치(7,473) 근접 후 5/15 -1.24%. 연초 대비 +28% 수준. KOSPI 대비 낙폭 제한적 — 미국 내수 경제 상대적 견고.
+    </div>
+    <div class="trend-desc">
+      <strong>🇯🇵 NIKKEI 225</strong><br>
+      61,409로 1년 전 대비 +22%. 엔화 달러당 148~150 유지 중. 수출 기업 실적 호조 지속 — 단 엔화 강세 전환 시 조정 가능성.
+    </div>
+    <div class="trend-desc">
+      <strong>🇺🇸 미국 국채 10년 금리</strong><br>
+      4.595%로 4월 말 대비 +30bp 급등. CPI 서프라이즈로 "Higher for Longer" 재부상. 5%+ 재도달 시 글로벌 자산시장 전반 위험.
+    </div>
+    <div class="trend-desc">
+      <strong>💱 원/달러 환율</strong><br>
+      1,450원대 — 1년 전 1,360원 대비 +6.6% 약세. 이란 사태·외국인 순매도 지속 시 1,500원 재돌파 경계. 수출주 수혜 vs. 수입 물가 부담.
+    </div>
+    <div class="trend-desc">
+      <strong>🛢️ WTI 원유</strong><br>
+      $105.66 — 1년 전 $82 대비 +29%. 호르무즈 사실상 봉쇄 3주째. IEA, 6월 말 글로벌 재고 소진 경고. 에너지 인플레 장기화 리스크 현실화.
+    </div>
+    <div class="trend-desc">
+      <strong>🥇 금 (스팟)</strong><br>
+      $4,547/oz — 1년 전 $2,300 대비 +98% (거의 2배). 안전자산 수요 + 달러 약세 사이클 주도. 단기 차익 실현으로 -1.83% 조정 중이나 장기 상승 추세 유효.
+    </div>
+  </div>
+</div>
+
+<!-- ⑤ 뉴스 상세 -->
+<div class="section">
+  <h2>📰 뉴스 상세</h2>
+
+  <div class="news-item">
+    <div class="no">No.01</div>
+    <h3>코스피 -6.12% 급락 — 8,000선 돌파 하루 만에 역대 낙폭</h3>
+    <div class="summary">
+      5월 15일 코스피는 전일 대비 489.06포인트(-6.12%) 하락한 7,493.18로 마감했다. 5월 11일 사상 최초로 8,000선을 돌파한 지 나흘 만의 급반전이다. 코스닥도 -5.14%로 동반 급락했다. 미중 정상회담 실망감과 이란-미국 협상 교착으로 인한 지정학 리스크가 복합 작용했다.
+    </div>
+    <div class="easy-box">
+      <div class="label">💡 쉽게 풀어쓰면</div>
+      주식 시장이 마치 엘리베이터를 타고 8층에 도착하자마자 하루 만에 7층 반으로 추락한 상황입니다. <strong>하루에 -6%</strong>는 외환위기·금융위기 수준의 낙폭으로, 10년에 한 번 보기 어려운 충격입니다. 외국인이 팔고, 기관도 팔고, 오직 개인만 <strong>7,506억원</strong>어치를 받아냈습니다.
+    </div>
+    <table class="fact-table">
+      <tr><th>항목</th><th>값</th></tr>
+      <tr><td>코스피 종가</td><td>7,493.18 (-6.12%)</td></tr>
+      <tr><td>코스닥 종가</td><td>1,129.82 (-5.14%)</td></tr>
+      <tr><td>외국인 순매도</td><td>-7,178억원 (6일 연속)</td></tr>
+      <tr><td>개인 순매수</td><td>+7,506억원</td></tr>
+      <tr><td>주요 원인</td><td>미중 회담 실망 + 이란 지정학</td></tr>
+    </table>
+    <div class="one-line">👉 단기 급등 피로 + 복합 리스크 — 8,000 재돌파는 미중·이란 리스크 해소 후 재도전</div>
+  </div>
+
+  <div class="news-item">
+    <div class="no">No.02</div>
+    <h3>WTI $105.66 (+4.44%) — 호르무즈 봉쇄 지속, 주간 +11% 급등</h3>
+    <div class="summary">
+      WTI 원유가 5월 15일 $105.66/배럴로 마감하며 주간 상승폭이 +11%에 달했다. 이란-미국 종전 협상이 교착 상태를 벗어나지 못하면서 호르무즈 해협이 사실상 봉쇄된 지 3주째다. IEA는 6월 말이면 글로벌 원유 재고가 소진될 수 있다고 경고했다.
+    </div>
+    <div class="easy-box">
+      <div class="label">💡 쉽게 풀어쓰면</div>
+      중동의 좁은 바닷길(호르무즈)이 막히면 세계 석유의 약 <strong>20%</strong>가 이동을 멈춥니다. 주유소에서 휘발유 값이 오르는 것처럼, 이 상황이 계속되면 수입 물가가 올라가고 결국 장바구니 물가까지 오릅니다. <strong>6월 말까지 재고가 소진</strong>될 수 있다는 경고는 매우 심각한 신호입니다.
+    </div>
+    <table class="fact-table">
+      <tr><th>항목</th><th>값</th></tr>
+      <tr><td>WTI 종가</td><td>$105.66/bbl (+4.44%)</td></tr>
+      <tr><td>브렌트유</td><td>$106.89/bbl (+1.11%)</td></tr>
+      <tr><td>주간 상승폭</td><td>+11%</td></tr>
+      <tr><td>호르무즈 봉쇄</td><td>3주 지속</td></tr>
+      <tr><td>IEA 경고</td><td>6월 말 글로벌 재고 소진 우려</td></tr>
+    </table>
+    <div class="one-line">👉 에너지 위기 장기화 리스크 — 인플레이션 재점화·금리 인하 지연 악순환 경계</div>
+  </div>
+
+  <div class="news-item">
+    <div class="no">No.03</div>
+    <h3>미 4월 CPI +0.6% 예상 상회 — Fed 금리 인하 시점 후퇴</h3>
+    <div class="summary">
+      미국 4월 소비자물가지수(CPI)가 전월 대비 0.6% 상승하며 시장 예상을 상회했다. 에너지 가격 급등이 주된 원인이다. 이에 따라 Fed의 금리 인하 시점이 연내에서 내년으로 후퇴할 수 있다는 전망이 강해지며 미 국채 10년물 금리가 4.595%로 급등했다.
+    </div>
+    <div class="easy-box">
+      <div class="label">💡 쉽게 풀어쓰면</div>
+      물가가 예상보다 많이 올랐다는 뜻입니다. 이는 중앙은행이 "아직 금리를 내릴 때가 아니다"라고 판단하게 만듭니다. 금리가 높으면 대출 이자가 비싸져 기업이 투자를 줄이고, 주식 시장에는 <strong>악재</strong>로 작용합니다. 올 연내 금리 인하 기대가 사라지는 분위기입니다.
+    </div>
+    <table class="fact-table">
+      <tr><th>항목</th><th>값</th></tr>
+      <tr><td>미 4월 CPI</td><td>+0.6% (MoM, 예상 상회)</td></tr>
+      <tr><td>미 국채 10년</td><td>4.595% (▲+14bp)</td></tr>
+      <tr><td>주요 원인</td><td>에너지 가격 급등</td></tr>
+      <tr><td>Fed 전망</td><td>연내 금리 인하 기대 급감</td></tr>
+    </table>
+    <div class="one-line">👉 인플레이션 재점화 → 고금리 장기화 → 성장주 추가 조정 가능성</div>
+  </div>
+
+  <div class="news-item">
+    <div class="no">No.04</div>
+    <h3>외국인 6일 연속 순매도 26조원 — 개인이 7,506억 받아내</h3>
+    <div class="summary">
+      외국인 투자자는 5월 7일부터 15일까지 6거래일 연속 코스피를 순매도하며 누적 26조 2,863억원을 팔아치웠다. 반면 개인 투자자는 코스피 8,000선 돌파 시 적극 매수에 나서 7,506억원을 순매수했다. 신용잔고도 36조원을 돌파해 금감원이 소비자 경보를 검토 중이다.
+    </div>
+    <div class="easy-box">
+      <div class="label">💡 쉽게 풀어쓰면</div>
+      외국인이 6일 동안 <strong>26조원</strong>어치를 팔 때 개인이 사들이는 구조는 위험합니다. 외국인이 더 나쁜 미래를 보고 빠져나가는데 개인이 "싸게 사겠다"며 받아들고 있는 것이기 때문입니다. 빚을 내서 주식을 사는 <strong>신용잔고 36조원</strong>이 폭락 시 강제 청산으로 이어질 수 있습니다.
+    </div>
+    <table class="fact-table">
+      <tr><th>항목</th><th>값</th></tr>
+      <tr><td>외국인 누적 순매도</td><td>-26조 2,863억원 (6일)</td></tr>
+      <tr><td>개인 순매수</td><td>+7,506억원</td></tr>
+      <tr><td>기관 순매도</td><td>-472억원</td></tr>
+      <tr><td>신용잔고</td><td>36조원 돌파</td></tr>
+    </table>
+    <div class="one-line">👉 외인 이탈 + 빚투 급증 — 추가 하락 시 반대매매 연쇄 리스크 주의</div>
+  </div>
+
+  <div class="news-item">
+    <div class="no">No.05</div>
+    <h3>엔비디아 중국 기업 칩 판매 허용 — AI 반도체 규제 부분 완화</h3>
+    <div class="summary">
+      미 상무부가 엔비디아의 일부 중국 기업에 대한 AI 칩 판매를 허용했다. 이는 미중 기술 패권 경쟁 속 부분적 규제 완화 신호로 해석된다. 국내 반도체 수출물가는 28년래 최고 수준까지 치솟으며 수출 호조가 이어지고 있다.
+    </div>
+    <div class="easy-box">
+      <div class="label">💡 쉽게 풀어쓰면</div>
+      엔비디아 칩을 중국에 팔 수 있게 됐다는 것은 AI 산업의 가장 중요한 부품 공급망이 일부 열렸다는 뜻입니다. 한국 삼성·SK하이닉스는 엔비디아 칩을 만들 때 필요한 <strong>HBM 메모리</strong>를 공급하므로, 이 완화가 한국 반도체 기업에도 호재입니다.
+    </div>
+    <table class="fact-table">
+      <tr><th>항목</th><th>값</th></tr>
+      <tr><td>조치</td><td>엔비디아 대중국 AI 칩 판매 일부 허용</td></tr>
+      <tr><td>한국 수출물가</td><td>28년래 최고 (반도체 주도)</td></tr>
+      <tr><td>수혜</td><td>삼성·SK하이닉스 HBM 수요 증가</td></tr>
+    </table>
+    <div class="one-line">👉 AI 반도체 수요 회복 기대 — 미중 갈등 재부상 시 다시 불확실</div>
+  </div>
+
+</div>
+
+<!-- ⑥ 오늘 포인트 -->
+<div class="section">
+  <h2>📌 오늘 포인트</h2>
+  <ul class="point-list">
+    <li>코스피 -6.12%(7,493.18) — 8,000선 돌파 4일 만에 역대급 낙폭. 외국인 6일 연속 순매도(-26조)와 미중 회담 실망이 핵심 촉매.</li>
+    <li>WTI +4.44%($105.66), 주간 +11% — 호르무즈 봉쇄 3주 지속. IEA 6월 말 재고 소진 경보. 에너지 인플레 장기화 현실화.</li>
+    <li>미 CPI +0.6% 서프라이즈 → 10년물 4.595% 급등 → Fed 금리 인하 연내 소멸. 글로벌 고금리 장기화 악재 재부상.</li>
+    <li>은(Silver) -10.61%($79.35) — 귀금속 중 최대 낙폭. 산업 수요 둔화 우려와 달러 강세 복합 작용. 하루 10%+ 낙폭은 이례적.</li>
+    <li>빚투 신용잔고 36조 돌파 — 추가 하락 시 반대매매 연쇄 청산 리스크. 금감원 소비자 경보 검토.</li>
+  </ul>
+</div>
+
+<!-- ⑦ 예측 포인트 -->
+<div class="section">
+  <h2>🔮 예측 포인트</h2>
+  <ul class="point-list">
+    <li>코스피 다음 주 7,400~7,600 지지 테스트. 미중 협상 재개·이란 종전 뉴스 여부가 방향성 결정. 외국인 순매도 전환 여부 주목.</li>
+    <li>WTI $100 상향 고착 시 수입 물가 상승 → 원달러 1,500원 재돌파 압박. 에너지·정유 섹터 수혜 지속 가능성.</li>
+    <li>반도체(삼성·SK하이닉스): 환율 수혜 + 엔비디아 규제 완화 호재 vs. 미중 갈등 재부상 리스크. 단기 변동성 속 중장기 상승 추세 유효.</li>
+    <li>미 국채 10년 4.6% 유지 시 성장주·바이오 추가 조정 가능성. 배당주·에너지주·가치주로 자금 이동 관찰.</li>
+    <li>중장기: 코스피 8,000선 재도전은 하반기 Fed 금리 인하 재개 시 가능. 이란 리스크 해소 속도가 핵심 변수.</li>
+  </ul>
+</div>
+
+<div class="disclaimer">
+  ※ 본 브리핑은 정보 제공 목적이며 투자 권유가 아닙니다.<br>
+  투자 판단과 그 결과는 전적으로 본인에게 있습니다.
+</div>
+</body>
+</html>
