@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[증시 브리핑] 2026년 05월 23일 (토) 16시</title>
+<link rel="stylesheet" href="style.css">
+<style>
+:root{--bg:#f4f6fa;--card:#fff;--border:#e2e8f0;--accent:#2563eb;--up:#e53e3e;--dn:#2563eb;--text:#1a202c;--sub:#64748b;}
+body{background:var(--bg);color:var(--text);font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;font-size:14px;line-height:1.6;}
+.back-link-bar{display:block;padding:12px 20px;background:var(--card);border-bottom:1px solid var(--border);font-size:13px;color:var(--sub);text-decoration:none;}
+.back-link-bar:hover{color:var(--accent);}
+.share-bar,.share-bar-bottom{display:flex;gap:10px;padding:12px 20px;background:var(--card);border-bottom:1px solid var(--border);}
+.share-bar-bottom{border-bottom:none;border-top:1px solid var(--border);justify-content:center;}
+.share-btn{flex:1;padding:10px;background:var(--accent);color:#fff;border:none;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;}
+.share-btn:hover{background:#1d4ed8;}
+.header{background:linear-gradient(135deg,#1e3a5f,#2563eb);padding:28px 20px 20px;}
+.header .badge{display:inline-block;background:rgba(255,255,255,0.2);color:#fff;font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;margin-bottom:10px;}
+.header h1{font-size:22px;font-weight:800;color:#fff;margin-bottom:4px;}
+.header .sub{color:rgba(255,255,255,0.8);font-size:13px;}
+.section{padding:20px;border-bottom:1px solid var(--border);background:var(--card);}
+.section h2{font-size:14px;font-weight:700;color:var(--accent);margin-bottom:14px;padding-bottom:6px;border-bottom:1px solid var(--border);text-transform:uppercase;letter-spacing:.04em;}
+table{width:100%;border-collapse:collapse;font-size:13px;}
+th{background:#f0f4f8;color:var(--sub);padding:8px 10px;text-align:left;font-size:12px;font-weight:600;}
+td{padding:8px 10px;border-bottom:1px solid var(--border);color:var(--text);}
+.up{color:var(--up);font-weight:700;} .dn{color:var(--dn);font-weight:700;} .flat{color:var(--sub);}
+@media(max-width:640px){.col-hide{display:none;} table{font-size:12px;} th,td{padding:6px 8px;}}
+.insight{background:#eff6ff;border-left:3px solid var(--accent);padding:10px 14px;margin-top:12px;font-size:13px;color:#1e40af;border-radius:0 6px 6px 0;}
+.point-list{list-style:none;padding:0;margin:0;}
+.point-list li{padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;color:var(--text);}
+.point-list li:last-child{border-bottom:none;}
+.point-list li::before{content:"• ";color:var(--accent);font-weight:700;}
+.disclaimer{color:var(--sub);font-size:12px;padding:20px;text-align:center;}
+</style>
+</head>
+<body>
+
+<a class="back-link-bar" href="https://tugman77.github.io/News/">← 브리핑 아카이브로 돌아가기</a>
+
+<!-- 상단 공유 버튼 -->
+<div class="share-bar">
+  <button class="share-btn" onclick="shareThis()">📤 공유하기</button>
+  <button class="share-btn" id="copyBtn" onclick="copyLink()">🔗 링크 복사</button>
+</div>
+
+<div class="header">
+  <div class="badge">🌇 16시 시장판</div>
+  <h1>📊 데일리 증시 브리핑</h1>
+  <div class="sub">2026년 05월 23일 (토) 16시 기준 | 전거래일(5/22 금) 종가</div>
+</div>
+
+<!-- ① 글로벌 증시 -->
+<div class="section">
+  <h2>🌍 글로벌 증시</h2>
+  <table>
+    <tr>
+      <th>지수</th>
+      <th>종가</th>
+      <th>등락률</th>
+      <th class="col-hide">등락 원인</th>
+    </tr>
+    <tr>
+      <td>🇰🇷 KOSPI</td>
+      <td>7,847.71</td>
+      <td class="up">▲ +0.41%<br><span style="font-weight:400;font-size:12px;">(+32.12pt)</span></td>
+      <td class="col-hide">코스닥 급등 연동, 7,800선 상단 안착</td>
+    </tr>
+    <tr>
+      <td>🇰🇷 KOSDAQ</td>
+      <td>1,161.13</td>
+      <td class="up">▲ +4.99%<br><span style="font-weight:400;font-size:12px;">(+55.16pt)</span></td>
+      <td class="col-hide">45조원 정책 펀드 유입 기대감 급등</td>
+    </tr>
+    <tr>
+      <td>🇺🇸 다우</td>
+      <td>50,579.70</td>
+      <td class="up">▲ +0.58%<br><span style="font-weight:400;font-size:12px;">(+292.09pt)</span></td>
+      <td class="col-hide">유가 하락·기업 실적 호조, 신고가 경신</td>
+    </tr>
+    <tr>
+      <td>🇺🇸 나스닥</td>
+      <td>25,870.71</td>
+      <td class="flat">—</td>
+      <td class="col-hide">AI 모멘텀 지속, 변동 미확인</td>
+    </tr>
+    <tr>
+      <td>🇺🇸 S&amp;P500</td>
+      <td>7,533.49</td>
+      <td class="flat">—</td>
+      <td class="col-hide">다우 신고가 견인</td>
+    </tr>
+  </table>
+  <div class="insight">💡 다우 50,000선 돌파 후 신고가 경신 + KOSDAQ 45조 정책기대 급등 — 글로벌 정책 모멘텀이 증시 상승 견인</div>
+</div>
+
+<!-- ② 환율 -->
+<div class="section">
+  <h2>💱 환율</h2>
+  <table>
+    <tr>
+      <th>통화쌍</th>
+      <th>현재</th>
+      <th>전일 대비</th>
+      <th class="col-hide">비고</th>
+    </tr>
+    <tr>
+      <td>USD / KRW</td>
+      <td>1,447.50원</td>
+      <td class="flat">— <span style="font-size:11px;color:#8892a4;">(범위: 1,445~1,452)</span></td>
+      <td class="col-hide">달러 소폭 강세 유지, 전일 대비 변화 미확인</td>
+    </tr>
+  </table>
+</div>
+
+<!-- ③ 원자재·실물 -->
+<div class="section">
+  <h2>🛢️ 원자재 · 💎 실물 시세</h2>
+  <table>
+    <tr>
+      <th>항목</th>
+      <th>가격</th>
+      <th>등락률</th>
+      <th>원화 환산</th>
+      <th class="col-hide">비고</th>
+    </tr>
+    <tr>
+      <td>🛢️ WTI 원유</td>
+      <td>$96.60/배럴</td>
+      <td class="up">▲ +0.26%</td>
+      <td>—</td>
+      <td class="col-hide">이란 협상 교착, 장중 98달러 후 소폭 반락</td>
+    </tr>
+    <tr>
+      <td>🥇 금</td>
+      <td>$4,527.92/oz</td>
+      <td class="dn">▼ -0.58%</td>
+      <td>210,714원/g</td>
+      <td class="col-hide">1월 최고가(5,602달러) 대비 -3.86% 조정 중</td>
+    </tr>
+    <tr>
+      <td>💎 백금</td>
+      <td>$1,944.20/oz</td>
+      <td class="dn">▼ -1.05%</td>
+      <td>90,481원/g</td>
+      <td class="col-hide">전년 동기比 +79%, 단기 고점 조정</td>
+    </tr>
+    <tr>
+      <td>🥈 은</td>
+      <td>$76.24/oz</td>
+      <td class="flat">—</td>
+      <td>3,549원/g</td>
+      <td class="col-hide">주간 보합, 이란 리스크 관망</td>
+    </tr>
+  </table>
+  <p style="font-size:11px;color:#8892a4;margin-top:8px;">※ 원화 환산: 온스당$ ÷ 31.1035 × 원달러환율(1,447.50원) | 5/22 기준</p>
+  <div class="insight">💡 WTI 96달러대 고착 — 이란 핵협상 교착 장기화 시 100달러 돌파 경계, 귀금속은 고점 대비 조정 국면</div>
+</div>
+
+<!-- ④ 오늘 포인트 -->
+<div class="section">
+  <h2>📌 오늘 포인트</h2>
+  <ul class="point-list">
+    <li><strong>KOSDAQ +4.99% 급등</strong> — 정부 45조원 정책 펀드 유입 기대감 폭발, 1,161.13pt 마감 (연내 최대 일일 상승 수준)</li>
+    <li><strong>다우 50,579.70pt 신고가 경신</strong> — +292.09pt(+0.58%) 상승, 유가 하락 + 기업 실적 호조 복합 작용</li>
+    <li><strong>WTI 96.60달러/배럴</strong> — 이란 최고지도자 농축우라늄 국외 반출 거부 → 협상 교착, 장중 98달러 돌파 후 소폭 하락</li>
+    <li><strong>금 4,527.92달러/oz (210,714원/g)</strong> — 1월 역대최고(5,602달러) 대비 3.86% 하락세, 최근 1개월 -3.86%</li>
+    <li><strong>KOSPI 7,847.71pt (+0.41%)</strong> — 7,800선 상단 안착, 코스닥 급등에도 대형주는 차분한 동반 상승</li>
+  </ul>
+</div>
+
+<!-- ⑤ 예측 포인트 -->
+<div class="section">
+  <h2>🔮 예측 포인트</h2>
+  <ul class="point-list">
+    <li><strong>코스피 7,900선 돌파 도전</strong> — 45조 정책펀드 세부 계획 발표 여부가 핵심 촉매, 달성 시 8,000선 기대감 확산 가능</li>
+    <li><strong>KOSDAQ 단기 차익실현 주의</strong> — 4.99% 급등 후 다음 거래일 매물 소화 가능성, 정책 구체화 시 추가 상승 여지</li>
+    <li><strong>WTI 100달러 돌파 리스크</strong> — 이란 핵협상 완전 결렬 시 유가 급등 → 인플레 재자극 → 연준 인하 기대 약화 가능</li>
+    <li><strong>귀금속 하락 조정 지속 여부 주목</strong> — 금·백금 고점 대비 조정 지속 중, 지정학 리스크 재부각 시 반등 기회 상존</li>
+    <li><strong>미국 증시 과열 경계</strong> — 다우 신고가 경신 속 S&amp;P500 7,500선 유지 여부, 실적 시즌 말미 단기 조정 가능성 상존</li>
+  </ul>
+</div>
+
+<!-- 하단 공유 버튼 -->
+<div class="share-bar-bottom">
+  <button class="share-btn" onclick="shareThis()">📤 공유하기</button>
+  <button class="share-btn" id="copyBtn2" onclick="copyLink2()">🔗 링크 복사</button>
+</div>
+
+<div class="disclaimer">
+  ※ 본 브리핑은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 결과는 본인에게 있습니다.
+</div>
+
+<script>
+function shareThis(){
+  if(navigator.share){navigator.share({title:document.title,url:location.href});}
+  else{copyLink();}
+}
+function copyLink(){
+  navigator.clipboard.writeText(location.href).then(()=>{
+    var b=document.getElementById('copyBtn');
+    b.textContent='✅ 복사됨';
+    setTimeout(()=>{b.textContent='🔗 링크 복사';},2000);
+  });
+}
+function copyLink2(){
+  navigator.clipboard.writeText(location.href).then(()=>{
+    var b=document.getElementById('copyBtn2');
+    b.textContent='✅ 복사됨';
+    setTimeout(()=>{b.textContent='🔗 링크 복사';},2000);
+  });
+}
+</script>
+</body>
+</html>
