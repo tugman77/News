@@ -7,9 +7,126 @@
     <link>https://tugman77.github.io/News/</link>
     <description>매일 아침·저녁 증시·시세·뉴스를 정리한 데일리 브리핑</description>
     <language>ko</language>
-    <lastBuildDate>Mon, 25 May 2026 03:02:19 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 06:17:21 GMT</lastBuildDate>
     <atom:link href="https://tugman77.github.io/News/rss.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+        <title>2026년 05월 25일 08시 종합판</title>
+        <link>https://tugman77.github.io/News/2026-05-25-08.html</link>
+        <guid isPermaLink="true">https://tugman77.github.io/News/2026-05-25-08.html</guid>
+        <pubDate>Sun, 24 May 2026 23:00:00 GMT</pubDate>
+        <description><![CDATA[【헤드라인】
+· 코스닥 +4.99% 급등 — 국가 지원펀드 기대·반도체 강세 맞물려 2년래 최대 상승
+· S&P500 8주 연속 주간 상승 — 무역협상 기대감·AI 수요 견조로 강세장 지속
+· 금값 $4,744 고공행진 — 달러 약세 속 안전자산 수요 집중, 사상 최고치권
+· 삼성전자 노조 영업이익 15% 분배 요구 — 노사 협상 난항으로 갈등 고조
+· 스페이스X 우주 사업 확장 — '4경2800조 시장' 공략 본격화, 실패 경고에도 투자 열기
+
+【오늘 포인트】
+· 코스닥 +4.99% 급등: 국가지원펀드 본격 투입 기대감에 개인·기관 동반 순매수, 반도체·바이오 업종 주도로 2년래 최대 상승폭 기록
+· S&P500 8주 연속 상승 마감: 미·중 무역협상 기대와 빅테크 AI 수요 견조가 3대 지수 동반 강세를 이끌며 시장 심리 개선 지속
+· 금·은 사상 최고치권: 달러 약세와 지정학적 불확실성이 귀금속 가격을 사상 최고 수준으로 끌어올리며 실물 자산 선호 뚜렷
+
+【예측 포인트】
+· 화요일(5/26) 코스닥 재개장: 급등 이후 차익실현 매물 출회 vs. 추가 상승 분기점 — 국가지원펀드 집행 확인 여부가 방향 결정
+· 삼성전자 노사 협상 향방: 영업이익 15% 배분 요구 지속 시 생산 차질 우려 → 반도체 투자심리에 단기 부담 요인으로 작용 가능
+· 원/달러 1,520원대 공방: 메모리얼데이 이후 미국 통화정책 지표 발표 집중, 방향성 재확인 후 원화 변동성 확대 전망]]></description>
+        <content:encoded><![CDATA[<div class="header">
+  <div class="badge">📅 2026년 05월 25일 08시 종합판</div>
+  <h1>📊 데일리 증시 브리핑</h1>
+  <div class="sub">2026년 05월 25일 (월) 오전 8시 | 재테크스토리</div>
+</div>
+
+<div class="holiday-notice">
+  ⚠️ 오늘(5/25) 한국·미국 증시 동시 휴장 — 한국: 석가탄신일 / 미국: 메모리얼데이 | 아래는 5/22(금) 마감 기준 데이터입니다.
+</div>
+
+<!-- 증시 현황 -->
+<div class="section">
+  <h2>📈 증시 현황 (5/22 마감)</h2>
+  <table>
+    <tr><th>종목</th><th>지수</th><th>등락률</th><th class="col-hide">비고</th></tr>
+    <tr><td><strong>코스피</strong></td><td>7,847.71</td><td class="up">▲ +0.41%</td><td class="col-hide">이틀 연속 상승</td></tr>
+    <tr><td><strong>코스닥</strong></td><td>1,161.13</td><td class="up">▲ +4.99%</td><td class="col-hide">국가지원펀드 기대 급등</td></tr>
+    <tr><td><strong>다우존스</strong></td><td>50,579.70</td><td class="up">▲ +0.58%</td><td class="col-hide">3주 연속 주간 상승</td></tr>
+    <tr><td><strong>나스닥</strong></td><td>26,343.97</td><td class="up">▲ +0.19%</td><td class="col-hide">AI 수요 견조</td></tr>
+    <tr><td><strong>S&amp;P 500</strong></td><td>7,473.47</td><td class="up">▲ +0.37%</td><td class="col-hide">8주 연속 주간 상승</td></tr>
+  </table>
+  <div class="insight">💡 코스닥 +4.99% 급등 — 2년래 최대 상승폭. 국가 지원 펀드 기대감에 개인·기관 동반 매수세가 유입됐습니다.</div>
+</div>
+
+<!-- 환율 -->
+<div class="section">
+  <h2>💱 환율</h2>
+  <table>
+    <tr><th>통화쌍</th><th>환율</th><th>기준일</th><th class="col-hide">동향</th></tr>
+    <tr><td><strong>원/달러</strong></td><td>1,519.90원</td><td>5/23</td><td class="col-hide">달러 약세 흐름 지속</td></tr>
+  </table>
+</div>
+
+<!-- 실물 시세 -->
+<div class="section">
+  <h2>🏅 실물 시세 (금·백금·은)</h2>
+  <table>
+    <tr><th>품목</th><th>달러/oz</th><th>등락</th><th>원/g</th><th class="col-hide">비고</th></tr>
+    <tr><td><strong>금</strong></td><td>$4,744.08</td><td class="flat">—</td><td>231,800원</td><td class="col-hide">사상 최고치권 유지</td></tr>
+    <tr><td><strong>백금</strong></td><td>$1,931.40</td><td class="dn">▼ -1.70%</td><td>94,380원</td><td class="col-hide">전일 대비 소폭 하락</td></tr>
+    <tr><td><strong>은</strong></td><td>$76.24</td><td class="flat">—</td><td>3,727원</td><td class="col-hide">견조한 수준 유지</td></tr>
+  </table>
+  <p style="font-size:11px;color:#8892a4;margin-top:8px;">※ 원/g 환산: 달러/oz ÷ 31.1035 × 원/달러(1,519.90)</p>
+  <table style="margin-top:12px;">
+    <tr><th>원자재</th><th>가격</th><th class="col-hide">비고</th></tr>
+    <tr><td><strong>WTI 원유</strong></td><td>$96.60/배럴</td><td class="col-hide">5/22 기준, 고점 대비 하락</td></tr>
+  </table>
+  <div class="insight">💡 금값은 $4,744로 사상 최고치권을 유지 중. 달러 약세와 글로벌 불확실성이 안전자산 수요를 뒷받침하고 있습니다.</div>
+</div>
+
+<!-- 주요 헤드라인 -->
+<div class="section">
+  <h2>📰 주요 헤드라인</h2>
+  <ol class="news-list">
+    <li>코스닥 +4.99% 급등 — 국가 지원펀드 기대·반도체 강세 맞물려 2년래 최대 상승</li>
+    <li>S&amp;P500 8주 연속 주간 상승 — 무역협상 기대감·AI 수요 견조로 강세장 지속</li>
+    <li>금값 $4,744 고공행진 — 달러 약세 속 안전자산 수요 집중, 사상 최고치권</li>
+    <li>삼성전자 노조 영업이익 15% 분배 요구 — 노사 협상 난항으로 갈등 고조</li>
+    <li>스페이스X 우주 사업 확장 — '4경2800조 시장' 공략 본격화, 실패 경고에도 투자 열기</li>
+  </ol>
+</div>
+
+<!-- 오늘 포인트 -->
+<div class="section">
+  <h2>🎯 오늘 포인트</h2>
+  <ul class="point-list">
+    <li>코스닥 +4.99% 급등: 국가지원펀드 본격 투입 기대감에 개인·기관 동반 순매수, 반도체·바이오 업종 주도로 2년래 최대 상승폭 기록</li>
+    <li>S&amp;P500 8주 연속 상승 마감: 미·중 무역협상 기대와 빅테크 AI 수요 견조가 3대 지수 동반 강세를 이끌며 시장 심리 개선 지속</li>
+    <li>금·은 사상 최고치권: 달러 약세와 지정학적 불확실성이 귀금속 가격을 사상 최고 수준으로 끌어올리며 실물 자산 선호 뚜렷</li>
+  </ul>
+</div>
+
+<!-- 예측 포인트 -->
+<div class="section">
+  <h2>🔮 예측 포인트</h2>
+  <ul class="point-list">
+    <li>화요일(5/26) 코스닥 재개장: 급등 이후 차익실현 매물 출회 vs. 추가 상승 분기점 — 국가지원펀드 집행 확인 여부가 방향 결정</li>
+    <li>삼성전자 노사 협상 향방: 영업이익 15% 배분 요구 지속 시 생산 차질 우려 → 반도체 투자심리에 단기 부담 요인으로 작용 가능</li>
+    <li>원/달러 1,520원대 공방: 메모리얼데이 이후 미국 통화정책 지표 발표 집중, 방향성 재확인 후 원화 변동성 확대 전망</li>
+  </ul>
+</div>
+
+
+
+<div class="disclaimer">
+  ※ 본 브리핑은 투자 참고용 정보입니다. 투자 판단은 본인 책임 하에 이루어져야 합니다.
+</div>
+
+
+
+<hr/><p style="font-size:12px;color:#888;">원문 보기: <a href="https://tugman77.github.io/News/2026-05-25-08.html">https://tugman77.github.io/News/2026-05-25-08.html</a></p>]]></content:encoded>
+        <category>증시브리핑</category>
+        <category>재테크</category>
+        <category>주식</category>
+        <category>시황</category>
+    </item>
     <item>
         <title>2026년 05월 24일 21시 시장판</title>
         <link>https://tugman77.github.io/News/2026-05-24-21.html</link>
