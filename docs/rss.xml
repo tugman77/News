@@ -7,9 +7,190 @@
     <link>https://tugman77.github.io/News/</link>
     <description>매일 아침·저녁 증시·시세·뉴스를 정리한 데일리 브리핑</description>
     <language>ko</language>
-    <lastBuildDate>Mon, 25 May 2026 06:17:21 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 08:08:58 GMT</lastBuildDate>
     <atom:link href="https://tugman77.github.io/News/rss.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+        <title>2026년 05월 25일 17시 시장판</title>
+        <link>https://tugman77.github.io/News/2026-05-25-17.html</link>
+        <guid isPermaLink="true">https://tugman77.github.io/News/2026-05-25-17.html</guid>
+        <pubDate>Mon, 25 May 2026 08:00:00 GMT</pubDate>
+        <description><![CDATA[【오늘 포인트】
+· S&P500 8주 연속 상승 마감(+0.37%), 다우존스 50,579pt로 사상 최고치 재차 근접 — 2023년 12월 이후 가장 긴 연속 강세 기록
+· 코스닥 +4.73% 급등, 2차전지·AI 반도체 주도 매수세 집중 — 코스피 월간 거래대금 평균 48조원으로 역대 최고치 경신
+· WTI 원유 $92.07로 급락(-4.69%) — 이란 갈등 완화 기대감, 오전 3% 상승 후 급반전해 석유주 변동성 확대
+· 금 가격 $4,516.75/oz로 2주 연속 하락세 — 인플레이션 우려 지속으로 연준 금리 인상 기대감이 안전자산 압박 요인
+· 오늘(5/25) 한·미 양국 동시 휴장 (부처님오신날 대체공휴일·메모리얼데이) — 5/26(화) 동시 재개장 예정
+
+【예측 포인트】
+· 5/26(화) 한국 재개장 — 미국 8주 연속 강세·코스닥 급등 모멘텀에 힘입어 코스피 7,900~8,000선 재탈환 도전 예상. 코스닥도 1,100pt 지지 여부 관건
+· 원/달러 1,500원대 유지 여부 주목 — 원화 강세(원달러 하락) 지속 시 외국인 매수 유입 동력 강화, 반도체·전기차 수출 기업 실적 개선 기대
+· 유가 급락 수혜 업종(항공·운수·석유화학) 단기 강세 예상. 반도체·AI 섹터는 나스닥 강세 흐름 이어받아 SK하이닉스·삼성전자 동반 주목]]></description>
+        <content:encoded><![CDATA[<!-- 상단 공유 버튼 -->
+
+
+<div class="header">
+  <div class="badge">🏖️ 16시 시장판</div>
+  <h1>📊 데일리 증시 브리핑</h1>
+  <p class="sub">2026년 05월 25일 (월) | 전 거래일(5/22) 종가 기준</p>
+</div>
+
+<div class="holiday-notice">
+  🔔 오늘(5/25)은 <strong>한국 부처님오신날 대체공휴일</strong> &amp; <strong>미국 메모리얼데이</strong>로 양국 증시 동시 휴장. 아래 데이터는 전 거래일(5월 22일, 금요일) 종가 기준입니다.
+</div>
+
+<!-- ① 글로벌 증시 -->
+<div class="section">
+  <h2>🌍 글로벌 증시</h2>
+  <table>
+    <tr>
+      <th>지수</th>
+      <th>종가</th>
+      <th>등락</th>
+      <th>등락률</th>
+      <th class="col-hide">등락 원인</th>
+    </tr>
+    <tr>
+      <td><strong>코스피</strong></td>
+      <td>7,847.71</td>
+      <td class="up">▲ +32.12</td>
+      <td class="up">+0.41%</td>
+      <td class="col-hide">외인 매도 속 기관 매수·반도체 강세 지지</td>
+    </tr>
+    <tr>
+      <td><strong>코스닥</strong></td>
+      <td>1,105.97</td>
+      <td class="up">▲ +49.90</td>
+      <td class="up">+4.73%</td>
+      <td class="col-hide">2차전지·AI 관련주 급등, 거래대금 역대 최고</td>
+    </tr>
+    <tr>
+      <td><strong>다우존스</strong></td>
+      <td>50,579.70</td>
+      <td class="up">▲ +294.00</td>
+      <td class="up">+0.58%</td>
+      <td class="col-hide">중동 평화협상 진전 기대, 기업실적 호조</td>
+    </tr>
+    <tr>
+      <td><strong>나스닥</strong></td>
+      <td>26,343.97</td>
+      <td class="up">▲ +50.87</td>
+      <td class="up">+0.19%</td>
+      <td class="col-hide">기술주 완만한 상승, 금리 우려 일부 상쇄</td>
+    </tr>
+    <tr>
+      <td><strong>S&amp;P500</strong></td>
+      <td>7,473.47</td>
+      <td class="up">▲ +27.75</td>
+      <td class="up">+0.37%</td>
+      <td class="col-hide">8주 연속 상승, 2023년 12월 이후 최장 연속 강세</td>
+    </tr>
+  </table>
+  <div class="insight">💡 S&amp;P500 8주 연속 상승 마감 — 2023년 12월 이후 가장 긴 연속 강세. 다우존스는 50,579pt로 사상 최고치권 근접 중.</div>
+</div>
+
+<!-- ② 환율 -->
+<div class="section">
+  <h2>💱 환율</h2>
+  <table>
+    <tr>
+      <th>통화쌍</th>
+      <th>현재 (원)</th>
+      <th>전일 대비</th>
+      <th class="col-hide">비고</th>
+    </tr>
+    <tr>
+      <td><strong>원/달러 (USD/KRW)</strong></td>
+      <td>1,502.56</td>
+      <td class="flat">—</td>
+      <td class="col-hide">휴장일 기준, 5/23 고점 1,519.9원 대비 원화 강세 전환</td>
+    </tr>
+  </table>
+  <div class="insight">💡 원/달러 1,502원대로 5/23 고점(1,519원)에서 원화 강세 전환. 한국 시장 재개장(5/26) 시 외국인 유입 여부가 관건.</div>
+</div>
+
+<!-- ③ 원자재·실물 -->
+<div class="section">
+  <h2>🛢️ 원자재 · 💎 실물 시세</h2>
+  <table>
+    <tr>
+      <th>항목</th>
+      <th>가격 (USD)</th>
+      <th>등락</th>
+      <th>원화 환산</th>
+      <th class="col-hide">비고</th>
+    </tr>
+    <tr>
+      <td><strong>WTI 원유</strong></td>
+      <td>$92.07/bbl</td>
+      <td class="dn">▼ -$4.53 (-4.69%)</td>
+      <td>—</td>
+      <td class="col-hide">이란 지정학 리스크 완화 기대감에 급락</td>
+    </tr>
+    <tr>
+      <td><strong>금 (Gold)</strong></td>
+      <td>$4,516.75/oz</td>
+      <td class="dn">▼ (주간 2연속↓)</td>
+      <td>218,197원/g</td>
+      <td class="col-hide">인플레이션 우려·금리 인상 기대에 하방 압력</td>
+    </tr>
+    <tr>
+      <td><strong>백금 (Platinum)</strong></td>
+      <td>$1,931.40/oz</td>
+      <td class="dn">▼ -1.70%</td>
+      <td>93,303원/g</td>
+      <td class="col-hide">산업 수요 강세에도 귀금속 동반 약세</td>
+    </tr>
+    <tr>
+      <td><strong>은 (Silver)</strong></td>
+      <td>$77.97/oz</td>
+      <td class="flat">—</td>
+      <td>3,767원/g</td>
+      <td class="col-hide">산업용 수요 지속, 방향성 관망</td>
+    </tr>
+  </table>
+  <p style="font-size:11px;color:#8892a4;margin-top:8px;">※ 원화 환산: 온스당$ ÷ 31.1035 × 원달러환율(1,502.56원) 적용</p>
+  <div class="insight">💡 WTI 유가 $92.07로 4.7% 급락 — 항공·운수·화학 업종 수혜 기대. 금은 $4,516로 2주 연속 약세, 달러 강세 반전 시 반등 가능성 주시.</div>
+</div>
+
+<!-- ④ 오늘 포인트 -->
+<div class="section">
+  <h2>📌 오늘 포인트</h2>
+  <ul class="point-list">
+    <li>S&amp;P500 <strong>8주 연속 상승</strong> 마감(+0.37%), 다우존스 50,579pt로 사상 최고치 재차 근접 — 2023년 12월 이후 가장 긴 연속 강세 기록</li>
+    <li>코스닥 <strong>+4.73% 급등</strong>, 2차전지·AI 반도체 주도 매수세 집중 — 코스피 월간 거래대금 평균 48조원으로 역대 최고치 경신</li>
+    <li>WTI 원유 <strong>$92.07로 급락(-4.69%)</strong> — 이란 갈등 완화 기대감, 오전 3% 상승 후 급반전해 석유주 변동성 확대</li>
+    <li>금 가격 <strong>$4,516.75/oz</strong>로 2주 연속 하락세 — 인플레이션 우려 지속으로 연준 금리 인상 기대감이 안전자산 압박 요인</li>
+    <li>오늘(5/25) <strong>한·미 양국 동시 휴장</strong> (부처님오신날 대체공휴일·메모리얼데이) — 5/26(화) 동시 재개장 예정</li>
+  </ul>
+</div>
+
+<!-- ⑤ 예측 포인트 -->
+<div class="section">
+  <h2>🔮 예측 포인트</h2>
+  <ul class="point-list">
+    <li><strong>5/26(화) 한국 재개장</strong> — 미국 8주 연속 강세·코스닥 급등 모멘텀에 힘입어 코스피 7,900~8,000선 재탈환 도전 예상. 코스닥도 1,100pt 지지 여부 관건</li>
+    <li><strong>원/달러 1,500원대</strong> 유지 여부 주목 — 원화 강세(원달러 하락) 지속 시 외국인 매수 유입 동력 강화, 반도체·전기차 수출 기업 실적 개선 기대</li>
+    <li><strong>유가 급락 수혜</strong> 업종(항공·운수·석유화학) 단기 강세 예상. 반도체·AI 섹터는 나스닥 강세 흐름 이어받아 SK하이닉스·삼성전자 동반 주목</li>
+  </ul>
+</div>
+
+<!-- 하단 공유 버튼 -->
+
+
+<div class="disclaimer">
+  ※ 본 브리핑은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 결과는 본인에게 있습니다.<br>
+  데이터 기준: 2026년 5월 22일(금) 종가 (5/25 한·미 양국 휴장일)
+</div>
+
+
+
+<hr/><p style="font-size:12px;color:#888;">원문 보기: <a href="https://tugman77.github.io/News/2026-05-25-17.html">https://tugman77.github.io/News/2026-05-25-17.html</a></p>]]></content:encoded>
+        <category>증시브리핑</category>
+        <category>재테크</category>
+        <category>주식</category>
+        <category>시황</category>
+    </item>
     <item>
         <title>2026년 05월 25일 08시 종합판</title>
         <link>https://tugman77.github.io/News/2026-05-25-08.html</link>
