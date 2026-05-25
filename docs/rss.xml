@@ -7,9 +7,163 @@
     <link>https://tugman77.github.io/News/</link>
     <description>매일 아침·저녁 증시·시세·뉴스를 정리한 데일리 브리핑</description>
     <language>ko</language>
-    <lastBuildDate>Sun, 24 May 2026 12:07:53 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 03:02:19 GMT</lastBuildDate>
     <atom:link href="https://tugman77.github.io/News/rss.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+        <title>2026년 05월 24일 21시 시장판</title>
+        <link>https://tugman77.github.io/News/2026-05-24-21.html</link>
+        <guid isPermaLink="true">https://tugman77.github.io/News/2026-05-24-21.html</guid>
+        <pubDate>Sun, 24 May 2026 12:00:00 GMT</pubDate>
+        <description><![CDATA[【오늘 포인트】
+· 코스닥 +4.99% 급등(1,161.13) — 국부펀드(국가 지원 펀드) 확대 기대감에 개인·기관 쌍끌이 매수, 2026년 단일 최대 상승폭 기록
+· 코스피 7,847.71 (+0.41%) — 코스닥 강세에도 대형주 차익실현 압력으로 상승폭 제한, 7,850선 돌파 여부 다음 주 관건
+· 다우 50,579.70 (+0.58%, +294.04p) — 미 증시 완만한 상승 지속, 경기 연착륙 기대 속 기술주·소비주 고른 매수세
+· WTI $96.60/배럴 (+$0.25) — 미·이란 외교 협상 기대감에 장중 급등 후 축소, 유가 $90~$100 박스권 등락 지속
+· 금 $4,509.51/oz (-0.59%) · 백금 $1,931.40 (-1.70%) · 은 $75.49 하락 — 귀금속 전반 약세, 달러 강세 및 협상 기대로 안전자산 수요 위축
+
+【예측 포인트】
+· 코스닥 단기 급등 후 차익실현 압력 경계 — 국부펀드 추가 확대 공식 발표 시 바이오·IT 중심 1,200선 목표 가능, 발표 지연 시 되돌림 주의
+· 미·이란 핵 협상 결과가 WTI 방향성 결정 — 협상 타결 시 유가 $85~90 급락 가능, 결렬 시 $100 재도전 시나리오
+· 코스피 7,850 안착·원달러 1,500원 하향 안정 여부가 외국인 매수 유입 핵심 변수 — 달러 강세 지속 시 환차손 부담으로 유입 제한]]></description>
+        <content:encoded><![CDATA[<!-- 상단 공유 버튼 -->
+
+
+<div class="header">
+  <div class="badge">🌇 21시 시장판</div>
+  <h1>📊 데일리 증시 브리핑</h1>
+  <div class="sub">2026년 05월 24일 (일) 21시 기준 | 전거래일(5/22 금) 종가</div>
+</div>
+
+<!-- ① 글로벌 증시 -->
+<div class="section">
+  <h2>🌍 글로벌 증시</h2>
+  <table>
+    <tr><th>지수</th><th>종가</th><th>등락률</th><th class="col-hide">등락 원인</th></tr>
+    <tr>
+      <td>코스피 (KOSPI)</td>
+      <td>7,847.71</td>
+      <td class="up">▲ +0.41%</td>
+      <td class="col-hide">코스닥 급등 속 대형주 차익실현으로 상승폭 제한</td>
+    </tr>
+    <tr>
+      <td>코스닥 (KOSDAQ)</td>
+      <td>1,161.13</td>
+      <td class="up">▲ +4.99%</td>
+      <td class="col-hide">국부펀드 확대 기대감에 개인·기관 쌍끌이 매수</td>
+    </tr>
+    <tr>
+      <td>다우 (DJIA)</td>
+      <td>50,579.70</td>
+      <td class="up">▲ +0.58%</td>
+      <td class="col-hide">경기 연착륙 기대 속 기술주·소비주 고른 매수</td>
+    </tr>
+    <tr>
+      <td>나스닥 (NASDAQ Comp.)</td>
+      <td>26,343.97</td>
+      <td class="flat">—</td>
+      <td class="col-hide">데이터 수집 중</td>
+    </tr>
+    <tr>
+      <td>S&amp;P 500</td>
+      <td>7,473.47</td>
+      <td class="flat">—</td>
+      <td class="col-hide">데이터 수집 중</td>
+    </tr>
+  </table>
+  <div class="insight">💡 코스닥이 국부펀드 기대감에 +4.99% 급등하며 한국 증시 주도 — 코스피는 7,850선 안착 테스트 중</div>
+</div>
+
+<!-- ② 환율 -->
+<div class="section">
+  <h2>💱 환율</h2>
+  <table>
+    <tr><th>통화쌍</th><th>5/22 종가</th><th>전일 대비</th><th class="col-hide">비고</th></tr>
+    <tr>
+      <td>원 / 달러 (USD/KRW)</td>
+      <td>1,503.47원</td>
+      <td class="flat">—</td>
+      <td class="col-hide">주말 역외(NDF) 시장 1,520원대 달러 강세 지속</td>
+    </tr>
+  </table>
+  <div class="insight">💡 5/22 공식 종가 1,503.47원 · 주말 NDF 시장 1,520원대 상승 중 — 달러 강세 압력 지속</div>
+</div>
+
+<!-- ③ 원자재·실물 -->
+<div class="section">
+  <h2>🛢️ 원자재 · 💎 실물 시세</h2>
+  <table>
+    <tr><th>항목</th><th>가격(USD)</th><th>등락률</th><th>원화 환산</th><th class="col-hide">비고</th></tr>
+    <tr>
+      <td>WTI 원유</td>
+      <td>$96.60/배럴</td>
+      <td class="up">▲ +0.26%</td>
+      <td>—</td>
+      <td class="col-hide">미·이란 협상 기대에 급등 후 상승폭 축소</td>
+    </tr>
+    <tr>
+      <td>금 (Gold)</td>
+      <td>$4,509.51/oz</td>
+      <td class="dn">▼ -0.59%</td>
+      <td>217,979원/g</td>
+      <td class="col-hide">달러 강세·안전자산 수요 약화</td>
+    </tr>
+    <tr>
+      <td>백금 (Platinum)</td>
+      <td>$1,931.40/oz</td>
+      <td class="dn">▼ -1.70%</td>
+      <td>93,359원/g</td>
+      <td class="col-hide">귀금속 전반 약세, 3주 최저 부근</td>
+    </tr>
+    <tr>
+      <td>은 (Silver)</td>
+      <td>$75.49/oz</td>
+      <td class="dn">▼</td>
+      <td>3,648원/g</td>
+      <td class="col-hide">$76 지지선 하회</td>
+    </tr>
+  </table>
+  <p style="font-size:11px;color:#8892a4;margin-top:8px;">※ 원화 환산: 온스당$ ÷ 31.1035 × 원달러환율(1,503.47원)</p>
+  <div class="insight">💡 귀금속 3종 모두 하락 — 달러 강세와 미·이란 협상 낙관론이 안전자산 수요를 동시에 약화</div>
+</div>
+
+<!-- ④ 오늘 포인트 -->
+<div class="section">
+  <h2>📌 오늘 포인트</h2>
+  <ul class="point-list">
+    <li>코스닥 +4.99% 급등(1,161.13) — 국부펀드(국가 지원 펀드) 확대 기대감에 개인·기관 쌍끌이 매수, 2026년 단일 최대 상승폭 기록</li>
+    <li>코스피 7,847.71 (+0.41%) — 코스닥 강세에도 대형주 차익실현 압력으로 상승폭 제한, 7,850선 돌파 여부 다음 주 관건</li>
+    <li>다우 50,579.70 (+0.58%, +294.04p) — 미 증시 완만한 상승 지속, 경기 연착륙 기대 속 기술주·소비주 고른 매수세</li>
+    <li>WTI $96.60/배럴 (+$0.25) — 미·이란 외교 협상 기대감에 장중 급등 후 축소, 유가 $90~$100 박스권 등락 지속</li>
+    <li>금 $4,509.51/oz (-0.59%) · 백금 $1,931.40 (-1.70%) · 은 $75.49 하락 — 귀금속 전반 약세, 달러 강세 및 협상 기대로 안전자산 수요 위축</li>
+  </ul>
+</div>
+
+<!-- ⑤ 예측 포인트 -->
+<div class="section">
+  <h2>🔮 예측 포인트</h2>
+  <ul class="point-list">
+    <li>코스닥 단기 급등 후 차익실현 압력 경계 — 국부펀드 추가 확대 공식 발표 시 바이오·IT 중심 1,200선 목표 가능, 발표 지연 시 되돌림 주의</li>
+    <li>미·이란 핵 협상 결과가 WTI 방향성 결정 — 협상 타결 시 유가 $85~90 급락 가능, 결렬 시 $100 재도전 시나리오</li>
+    <li>코스피 7,850 안착·원달러 1,500원 하향 안정 여부가 외국인 매수 유입 핵심 변수 — 달러 강세 지속 시 환차손 부담으로 유입 제한</li>
+  </ul>
+</div>
+
+<!-- 하단 공유 버튼 -->
+
+
+<div class="disclaimer">
+  ※ 본 브리핑은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 결과는 본인에게 있습니다.
+</div>
+
+
+
+<hr/><p style="font-size:12px;color:#888;">원문 보기: <a href="https://tugman77.github.io/News/2026-05-24-21.html">https://tugman77.github.io/News/2026-05-24-21.html</a></p>]]></content:encoded>
+        <category>증시브리핑</category>
+        <category>재테크</category>
+        <category>주식</category>
+        <category>시황</category>
+    </item>
     <item>
         <title>2026년 05월 23일 16시 시장판</title>
         <link>https://tugman77.github.io/News/2026-05-23-16.html</link>
