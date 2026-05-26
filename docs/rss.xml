@@ -7,9 +7,162 @@
     <link>https://tugman77.github.io/News/</link>
     <description>매일 아침·저녁 증시·시세·뉴스를 정리한 데일리 브리핑</description>
     <language>ko</language>
-    <lastBuildDate>Mon, 25 May 2026 08:25:09 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 01:56:40 GMT</lastBuildDate>
     <atom:link href="https://tugman77.github.io/News/rss.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+        <title>2026년 05월 26일 10시 시장판</title>
+        <link>https://tugman77.github.io/News/2026-05-26-10.html</link>
+        <guid isPermaLink="true">https://tugman77.github.io/News/2026-05-26-10.html</guid>
+        <pubDate>Tue, 26 May 2026 01:00:00 GMT</pubDate>
+        <description><![CDATA[【오늘 포인트】
+· KOSDAQ 전일 +4.99% 급등(1,161.13): 정부 국가전략기술 육성펀드 기대감으로 AI·반도체 테마 폭등, 개장 33분 만에 사이드카 발동
+· 삼성전자 장중 30만원 역대 첫 돌파 후 292,500원 마감(-2.34%): 역대 최고가 터치 후 외국인 차익실현 집중
+· 코스피 오늘 오전 장중 8,000선 터치: 7,873 출발 후 심리적 저항선 8,000 돌파 시도, 시장 관심 집중
+· WTI 원유 -4.69%($92.07): 미국·이란 핵합의 협상 진전에 호르무즈 해협 봉쇄 해소 기대 → 공급 우려 급완화
+· 미국 S&P500 7,473.47(+0.37%): 8주 연속 주간 상승, 인플레 둔화·기업실적 강세로 52주 최고치 근접 유지
+
+【예측 포인트】
+· 코스피 8,000 돌파 공방: 외국인 순매도(일 1.9조) 압력 지속 시 저항, 기관·개인 대응 매수 강도가 핵심 변수
+· KOSDAQ 단기 조정 주의: 전일 5% 급등 후 차익실현 압력 증대, 정부 펀드 세부 집행 계획 발표 일정 확인 필요
+· 유가 하락 수혜 섹터 주목: WTI $90선 안착 시 국내 정유·항공·해운 업종 원가 절감 기대, 추가 하락 가능성도 병행 모니터링]]></description>
+        <content:encoded><![CDATA[<!-- 상단 공유 버튼 -->
+
+
+<div class="header">
+  <div class="badge">🌅 10시 시장판</div>
+  <h1>📊 데일리 증시 브리핑</h1>
+  <div class="sub">2026년 05월 26일 (화) 10시 기준 | 전거래일(5.22) 종가</div>
+</div>
+
+<!-- ① 글로벌 증시 -->
+<div class="section">
+  <h2>🌍 글로벌 증시</h2>
+  <table>
+    <tr><th>지수</th><th>종가</th><th>등락률</th><th class="col-hide">등락 원인</th></tr>
+    <tr>
+      <td>KOSPI</td>
+      <td>7,847.71</td>
+      <td><span class="up">▲32.18p (+0.41%)</span></td>
+      <td class="col-hide">외국인 1.93조 순매도에도 개인·기관 매수로 방어, 삼성전자 30만원 돌파</td>
+    </tr>
+    <tr>
+      <td>KOSDAQ</td>
+      <td>1,161.13</td>
+      <td><span class="up">▲55.19p (+4.99%)</span></td>
+      <td class="col-hide">정부 국가전략기술 육성펀드 기대감, 개장 33분 만에 사이드카 발동</td>
+    </tr>
+    <tr>
+      <td>다우존스</td>
+      <td>50,580.00</td>
+      <td><span class="up">▲294.00p (+0.58%)</span></td>
+      <td class="col-hide">인플레 완화·기업실적 호조로 8주 연속 상승 기록</td>
+    </tr>
+    <tr>
+      <td>나스닥</td>
+      <td>26,343.97</td>
+      <td><span class="up">▲50.87p (+0.19%)</span></td>
+      <td class="col-hide">기술주 완만한 상승, AI 관련 낙관론 지속</td>
+    </tr>
+    <tr>
+      <td>S&amp;P 500</td>
+      <td>7,473.47</td>
+      <td><span class="up">▲27.75p (+0.37%)</span></td>
+      <td class="col-hide">52주 최고치(7,517.12, 5.14) 근접, 8주 연속 주간 상승</td>
+    </tr>
+  </table>
+  <div class="insight">💡 미국 3대 지수 8주 연속 주간 상승 — S&amp;P 500이 52주 최고치(7,517.12)에 근접하며 강한 상승 모멘텀 유지 중. 한국은 5.25(월) 부처님오신날로 휴장, 전거래일은 5.22(금).</div>
+</div>
+
+<!-- ② 환율 -->
+<div class="section">
+  <h2>💱 환율</h2>
+  <table>
+    <tr><th>통화쌍</th><th>현재</th><th>전일 대비</th><th class="col-hide">비고</th></tr>
+    <tr>
+      <td>원/달러 (USD/KRW)</td>
+      <td>1,515.0원</td>
+      <td><span class="dn">▼2.20원</span></td>
+      <td class="col-hide">달러 약세 지속, WTI 유가 급락에 원화 소폭 강세 출발</td>
+    </tr>
+  </table>
+</div>
+
+<!-- ③ 원자재·실물 -->
+<div class="section">
+  <h2>🛢️ 원자재 · 💎 실물 시세</h2>
+  <table>
+    <tr><th>항목</th><th>가격</th><th>등락률</th><th>원화 환산</th><th class="col-hide">비고</th></tr>
+    <tr>
+      <td>WTI 원유</td>
+      <td>$92.07/배럴</td>
+      <td><span class="dn">▼$4.53 (-4.69%)</span></td>
+      <td>—</td>
+      <td class="col-hide">미·이란 핵협상 진전, 호르무즈 해협 재개통 기대로 급락</td>
+    </tr>
+    <tr>
+      <td>금 (Gold)</td>
+      <td>$4,562.69/oz</td>
+      <td><span class="up">▲$53.06 (+1.18%)</span></td>
+      <td>222,227원/g</td>
+      <td class="col-hide">달러 약세·지정학 불안에 안전자산 수요 유입</td>
+    </tr>
+    <tr>
+      <td>은 (Silver)</td>
+      <td>$78.79/oz</td>
+      <td><span class="flat">—</span></td>
+      <td>3,837원/g</td>
+      <td class="col-hide">산업·귀금속 복합 수요 지속</td>
+    </tr>
+    <tr>
+      <td>백금 (Platinum)</td>
+      <td>$1,976.50/oz</td>
+      <td><span class="up">▲$37.57 (+1.90%)</span></td>
+      <td>96,287원/g</td>
+      <td class="col-hide">중국 수요 강세, 남아공·러시아 공급 타이트 지속</td>
+    </tr>
+  </table>
+  <p style="font-size:11px;color:#8892a4;margin-top:8px;">※ 원화 환산: 온스당$ ÷ 31.1035 × 1,515원(원달러)</p>
+  <div class="insight">💡 WTI $92대 급락 vs 금 $4,562 강세 — 미·이란 핵협상 기대가 유가를 압박하는 가운데, 달러 약세를 배경으로 금·백금 귀금속은 반등세 유지.</div>
+</div>
+
+<!-- ④ 오늘 포인트 -->
+<div class="section">
+  <h2>📌 오늘 포인트</h2>
+  <ul class="point-list">
+    <li>KOSDAQ 전일 +4.99% 급등(1,161.13): 정부 국가전략기술 육성펀드 기대감으로 AI·반도체 테마 폭등, 개장 33분 만에 사이드카 발동</li>
+    <li>삼성전자 장중 30만원 역대 첫 돌파 후 292,500원 마감(-2.34%): 역대 최고가 터치 후 외국인 차익실현 집중</li>
+    <li>코스피 오늘 오전 장중 8,000선 터치: 7,873 출발 후 심리적 저항선 8,000 돌파 시도, 시장 관심 집중</li>
+    <li>WTI 원유 -4.69%($92.07): 미국·이란 핵합의 협상 진전에 호르무즈 해협 봉쇄 해소 기대 → 공급 우려 급완화</li>
+    <li>미국 S&amp;P500 7,473.47(+0.37%): 8주 연속 주간 상승, 인플레 둔화·기업실적 강세로 52주 최고치 근접 유지</li>
+  </ul>
+</div>
+
+<!-- ⑤ 예측 포인트 -->
+<div class="section">
+  <h2>🔮 예측 포인트</h2>
+  <ul class="point-list">
+    <li>코스피 8,000 돌파 공방: 외국인 순매도(일 1.9조) 압력 지속 시 저항, 기관·개인 대응 매수 강도가 핵심 변수</li>
+    <li>KOSDAQ 단기 조정 주의: 전일 5% 급등 후 차익실현 압력 증대, 정부 펀드 세부 집행 계획 발표 일정 확인 필요</li>
+    <li>유가 하락 수혜 섹터 주목: WTI $90선 안착 시 국내 정유·항공·해운 업종 원가 절감 기대, 추가 하락 가능성도 병행 모니터링</li>
+  </ul>
+</div>
+
+<!-- 하단 공유 버튼 -->
+
+
+<div class="disclaimer">
+  ※ 본 브리핑은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 결과는 본인에게 있습니다.
+</div>
+
+
+
+<hr/><p style="font-size:12px;color:#888;">원문 보기: <a href="https://tugman77.github.io/News/2026-05-26-10.html">https://tugman77.github.io/News/2026-05-26-10.html</a></p>]]></content:encoded>
+        <category>증시브리핑</category>
+        <category>재테크</category>
+        <category>주식</category>
+        <category>시황</category>
+    </item>
     <item>
         <title>2026년 05월 25일 17시 시장판</title>
         <link>https://tugman77.github.io/News/2026-05-25-17.html</link>
