@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[증시 브리핑] 2026년 5월 27일 13시 시장판</title>
+<link rel="stylesheet" href="style.css">
+<style>
+:root{--bg:#f4f6fa;--card:#fff;--border:#e2e8f0;--accent:#2563eb;--up:#e53e3e;--dn:#2563eb;--text:#1a202c;--sub:#64748b;}
+body{background:var(--bg);color:var(--text);font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;font-size:14px;line-height:1.6;margin:0;}
+.back-link-bar{display:block;padding:12px 20px;background:var(--card);border-bottom:1px solid var(--border);font-size:13px;color:var(--sub);text-decoration:none;}
+.back-link-bar:hover{color:var(--accent);}
+.share-bar,.share-bar-bottom{display:flex;gap:8px;padding:10px 20px;background:var(--card);border-bottom:1px solid var(--border);}
+.share-bar-bottom{border-top:1px solid var(--border);border-bottom:none;}
+.share-btn{background:var(--accent);color:#fff;border:none;border-radius:6px;padding:6px 14px;font-size:12px;cursor:pointer;}
+.header{background:linear-gradient(135deg,#1e3a5f,#2563eb);padding:28px 20px 20px;}
+.header .badge{display:inline-block;background:rgba(255,255,255,0.2);color:#fff;font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;margin-bottom:10px;}
+.header h1{font-size:22px;font-weight:800;color:#fff;margin:0 0 4px 0;}
+.header .sub{color:rgba(255,255,255,0.8);font-size:13px;}
+.section{padding:20px;border-bottom:1px solid var(--border);background:var(--card);}
+.section h2{font-size:14px;font-weight:700;color:var(--accent);margin:0 0 14px 0;padding-bottom:6px;border-bottom:1px solid var(--border);text-transform:uppercase;letter-spacing:.04em;}
+table{width:100%;border-collapse:collapse;font-size:13px;}
+th{background:#f0f4f8;color:var(--sub);padding:8px 10px;text-align:left;font-size:12px;font-weight:600;}
+td{padding:8px 10px;border-bottom:1px solid var(--border);color:var(--text);}
+.up{color:var(--up);font-weight:700;} .dn{color:var(--dn);font-weight:700;} .flat{color:var(--sub);}
+@media(max-width:640px){.col-hide{display:none;} table{font-size:12px;} th,td{padding:6px 8px;}}
+.insight{background:#eff6ff;border-left:3px solid var(--accent);padding:10px 14px;margin-top:12px;font-size:13px;color:#1e40af;border-radius:0 6px 6px 0;}
+.point-list{list-style:none;padding:0;margin:0;}
+.point-list li{padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;line-height:1.6;}
+.point-list li:last-child{border-bottom:none;}
+.point-list li::before{content:"▶ ";color:var(--accent);font-weight:700;}
+.disclaimer{color:var(--sub);font-size:12px;padding:20px;text-align:center;}
+</style>
+</head>
+<body>
+
+<a class="back-link-bar" href="https://tugman77.github.io/News/">← 브리핑 아카이브로 돌아가기</a>
+
+<div class="share-bar">
+  <button class="share-btn" onclick="shareThis()">📤 공유하기</button>
+  <button class="share-btn" id="copyBtn" onclick="copyLink()">🔗 링크 복사</button>
+</div>
+
+<div class="header">
+  <div class="badge">🌇 13시 시장판</div>
+  <h1>📊 데일리 증시 브리핑</h1>
+  <div class="sub">2026년 5월 27일 (수) 13시 기준</div>
+</div>
+
+<!-- ① 글로벌 증시 -->
+<div class="section">
+  <h2>🌍 글로벌 증시</h2>
+  <table>
+    <tr><th>지수</th><th>현재</th><th>등락률</th><th class="col-hide">비고</th></tr>
+    <tr>
+      <td><strong>코스피</strong></td>
+      <td>7,981.41</td>
+      <td class="up">▲ +1.75%</td>
+      <td class="col-hide">장중 (13시 기준)</td>
+    </tr>
+    <tr>
+      <td><strong>코스닥</strong></td>
+      <td>—</td>
+      <td class="flat">—</td>
+      <td class="col-hide">데이터 미수집</td>
+    </tr>
+    <tr>
+      <td><strong>다우존스</strong></td>
+      <td>49,530.94</td>
+      <td class="dn">▼ -1.07%</td>
+      <td class="col-hide">5/26 종가</td>
+    </tr>
+    <tr>
+      <td><strong>나스닥 종합</strong></td>
+      <td>26,343.97</td>
+      <td class="flat">—</td>
+      <td class="col-hide">5/26 종가</td>
+    </tr>
+    <tr>
+      <td><strong>S&amp;P 500</strong></td>
+      <td>7,519.12</td>
+      <td class="up">▲ +0.61%</td>
+      <td class="col-hide">5/26 신고점 종가</td>
+    </tr>
+  </table>
+  <div class="insight">💡 S&amp;P 500이 5/26 7,519.12로 사상 최고치 마감. Micron 주도 반도체·AI 랠리가 지수를 견인. 코스피는 미국발 훈풍을 이어받아 장중 7,981선까지 상승하며 8,000선 돌파를 저울질 중.</div>
+</div>
+
+<!-- ② 환율 -->
+<div class="section">
+  <h2>💱 환율</h2>
+  <table>
+    <tr><th>통화쌍</th><th>현재</th><th>전일 대비</th><th class="col-hide">비고</th></tr>
+    <tr>
+      <td><strong>원 / 달러</strong></td>
+      <td>1,514.82원</td>
+      <td class="flat">—</td>
+      <td class="col-hide">매매기준율 참고</td>
+    </tr>
+  </table>
+</div>
+
+<!-- ③ 원자재·실물 -->
+<div class="section">
+  <h2>🛢️ 원자재 · 💎 실물 시세</h2>
+  <table>
+    <tr><th>항목</th><th>가격 ($/oz 또는 $/bbl)</th><th>등락률</th><th>원화 환산</th><th class="col-hide">비고</th></tr>
+    <tr>
+      <td><strong>WTI 원유</strong></td>
+      <td>$93.12 / bbl</td>
+      <td class="dn">▼ -0.82%</td>
+      <td class="flat">—</td>
+      <td class="col-hide">미-이란 협상 불확실성</td>
+    </tr>
+    <tr>
+      <td><strong>금 (Gold)</strong></td>
+      <td>$4,489.65 / oz</td>
+      <td class="dn">▼ -1.74%</td>
+      <td>218,657원 / g</td>
+      <td class="col-hide">달러 강세, 위험선호 회복</td>
+    </tr>
+    <tr>
+      <td><strong>백금 (Platinum)</strong></td>
+      <td>$1,976.50 / oz</td>
+      <td class="up">▲ +1.90%</td>
+      <td>96,256원 / g</td>
+      <td class="col-hide">산업 수요 기대</td>
+    </tr>
+    <tr>
+      <td><strong>은 (Silver)</strong></td>
+      <td>$77.50 / oz</td>
+      <td class="flat">—</td>
+      <td>3,774원 / g</td>
+      <td class="col-hide">중동 불안 속 소폭 약세</td>
+    </tr>
+  </table>
+  <p style="font-size:11px;color:#8892a4;margin-top:8px;">※ 원화 환산: 온스당$ ÷ 31.1035 × 1,514.82원 (원달러환율 적용)</p>
+  <div class="insight">💡 WTI가 93달러대에서 미-이란 협상 불확실성으로 하락 압력을 받는 반면, 백금은 +1.90%로 귀금속 중 예외적 강세. 금은 달러 강세·위험자산 선호 회복으로 4,489달러까지 후퇴했으며, 1월 고점(5,602달러) 대비 20% 아래.</div>
+</div>
+
+<!-- ④ 오늘 포인트 -->
+<div class="section">
+  <h2>📌 오늘 포인트</h2>
+  <ul class="point-list">
+    <li>S&amp;P 500, 5/26 7,519.12 사상 최고치 마감(+0.61%) — Micron 급등이 반도체·AI 섹터 전반 랠리를 이끌며 기술주 강세 지속.</li>
+    <li>코스피, 13시 현재 7,981.41(+1.75%) 강한 반등 — 미국 증시 신고점 훈풍이 외국인 순매수로 연결되며 8,000선 돌파 여부에 시장의 이목이 쏠림.</li>
+    <li>다우존스 49,530.94(-1.07%) 약세 — S&amp;P·나스닥과 엇갈린 흐름. 전통 산업주 차익실현 매물 출회로 블루칩 전반 조정.</li>
+    <li>WTI 93.12달러(-0.82%) — 미-이란 핵협상 진전 기대와 공급 증가 우려가 맞물려 유가 하방 압력. 중동 지정학 변수가 여전히 핵심 변수.</li>
+    <li>금 4,489.65달러(-1.74%) 하락 — 위험선호 심리 회복 및 달러 강세로 안전자산 수요 감소. 백금(+1.90%)만 예외적 강세.</li>
+  </ul>
+</div>
+
+<!-- ⑤ 예측 포인트 -->
+<div class="section">
+  <h2>🔮 예측 포인트</h2>
+  <ul class="point-list">
+    <li>코스피 8,000선 돌파 시도 지속 — 장 후반 외국인 매수세 유지 여부가 관건. 돌파 성공 시 단기 모멘텀 확대 가능, 차익실현 물량 경계 필요.</li>
+    <li>반도체 섹터(삼성전자·SK하이닉스) 주목 — Micron 실적 훈풍 및 글로벌 AI 수요 확장이 국내 메모리 업체 밸류에이션 재평가 기대를 높임.</li>
+    <li>중동 지정학 리스크(미-이란 협상 결과) 최대 변수 — 협상 결렬 시 WTI 급반등·에너지주 수혜, 타결 시 유가 추가 하락·정유주 약세 가능성. 원유 수입 비중 높은 한국 무역수지에도 직접 영향.</li>
+  </ul>
+</div>
+
+<div class="share-bar-bottom">
+  <button class="share-btn" onclick="shareThis()">📤 공유하기</button>
+  <button class="share-btn" id="copyBtn2" onclick="copyLink2()">🔗 링크 복사</button>
+</div>
+
+<div class="disclaimer">
+  ※ 본 브리핑은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 판단과 그 결과는 본인에게 있습니다.
+</div>
+
+<script>
+function shareThis(){if(navigator.share){navigator.share({title:document.title,url:location.href});}else{copyLink();}}
+function copyLink(){navigator.clipboard.writeText(location.href).then(()=>{var b=document.getElementById('copyBtn');b.textContent='✅ 복사됨';setTimeout(()=>{b.textContent='🔗 링크 복사';},2000);});}
+function copyLink2(){navigator.clipboard.writeText(location.href).then(()=>{var b=document.getElementById('copyBtn2');b.textContent='✅ 복사됨';setTimeout(()=>{b.textContent='🔗 링크 복사';},2000);});}
+</script>
+</body>
+</html>
